@@ -28,89 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            backRecoverPasswordButton = new Button();
-            recoverPasswordEmailButton = new Button();
-            recoverPasswordEmailLineLabel = new Label();
-            recoverPasswordEmailTextBox = new TextBox();
-            recoverPasswordLabel = new Label();
-            SuspendLayout();
+            this.backRecoverPasswordButton = new System.Windows.Forms.Button();
+            this.recoverPasswordEmailButton = new System.Windows.Forms.Button();
+            this.recoverPasswordEmailLineLabel = new System.Windows.Forms.Label();
+            this.recoverPasswordEmailTextBox = new System.Windows.Forms.TextBox();
+            this.recoverPasswordLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // backRecoverPasswordButton
             // 
-            backRecoverPasswordButton.BackgroundImageLayout = ImageLayout.None;
-            backRecoverPasswordButton.FlatAppearance.BorderColor = Color.FromArgb(25, 42, 86);
-            backRecoverPasswordButton.FlatStyle = FlatStyle.Flat;
-            backRecoverPasswordButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            backRecoverPasswordButton.ForeColor = Color.Silver;
-            backRecoverPasswordButton.Location = new Point(9, 8);
-            backRecoverPasswordButton.Name = "backRecoverPasswordButton";
-            backRecoverPasswordButton.Size = new Size(81, 30);
-            backRecoverPasswordButton.TabIndex = 36;
-            backRecoverPasswordButton.Text = "⬅️ Volver";
-            backRecoverPasswordButton.UseVisualStyleBackColor = true;
+            this.backRecoverPasswordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.backRecoverPasswordButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
+            this.backRecoverPasswordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backRecoverPasswordButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backRecoverPasswordButton.ForeColor = System.Drawing.Color.Silver;
+            this.backRecoverPasswordButton.Location = new System.Drawing.Point(9, 8);
+            this.backRecoverPasswordButton.Name = "backRecoverPasswordButton";
+            this.backRecoverPasswordButton.Size = new System.Drawing.Size(81, 30);
+            this.backRecoverPasswordButton.TabIndex = 36;
+            this.backRecoverPasswordButton.Text = "⬅️ Volver";
+            this.backRecoverPasswordButton.UseVisualStyleBackColor = true;
+            this.backRecoverPasswordButton.Click += new System.EventHandler(this.backRecoverPasswordButton_Click);
             // 
             // recoverPasswordEmailButton
             // 
-            recoverPasswordEmailButton.BackColor = Color.FromArgb(10, 61, 98);
-            recoverPasswordEmailButton.FlatAppearance.BorderColor = Color.Teal;
-            recoverPasswordEmailButton.FlatStyle = FlatStyle.Flat;
-            recoverPasswordEmailButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            recoverPasswordEmailButton.ForeColor = Color.Silver;
-            recoverPasswordEmailButton.Location = new Point(239, 417);
-            recoverPasswordEmailButton.Name = "recoverPasswordEmailButton";
-            recoverPasswordEmailButton.Size = new Size(410, 39);
-            recoverPasswordEmailButton.TabIndex = 27;
-            recoverPasswordEmailButton.Text = "Enviar correo";
-            recoverPasswordEmailButton.UseVisualStyleBackColor = false;
+            this.recoverPasswordEmailButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.recoverPasswordEmailButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.recoverPasswordEmailButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recoverPasswordEmailButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.recoverPasswordEmailButton.ForeColor = System.Drawing.Color.Silver;
+            this.recoverPasswordEmailButton.Location = new System.Drawing.Point(239, 417);
+            this.recoverPasswordEmailButton.Name = "recoverPasswordEmailButton";
+            this.recoverPasswordEmailButton.Size = new System.Drawing.Size(410, 39);
+            this.recoverPasswordEmailButton.TabIndex = 27;
+            this.recoverPasswordEmailButton.Text = "Enviar correo";
+            this.recoverPasswordEmailButton.UseVisualStyleBackColor = false;
+            this.recoverPasswordEmailButton.Click += new System.EventHandler(this.recoverPasswordEmailButton_Click);
             // 
             // recoverPasswordEmailLineLabel
             // 
-            recoverPasswordEmailLineLabel.BackColor = Color.Silver;
-            recoverPasswordEmailLineLabel.Location = new Point(240, 323);
-            recoverPasswordEmailLineLabel.Name = "recoverPasswordEmailLineLabel";
-            recoverPasswordEmailLineLabel.Size = new Size(410, 2);
-            recoverPasswordEmailLineLabel.TabIndex = 24;
+            this.recoverPasswordEmailLineLabel.BackColor = System.Drawing.Color.Silver;
+            this.recoverPasswordEmailLineLabel.Location = new System.Drawing.Point(240, 323);
+            this.recoverPasswordEmailLineLabel.Name = "recoverPasswordEmailLineLabel";
+            this.recoverPasswordEmailLineLabel.Size = new System.Drawing.Size(410, 2);
+            this.recoverPasswordEmailLineLabel.TabIndex = 24;
             // 
             // recoverPasswordEmailTextBox
             // 
-            recoverPasswordEmailTextBox.BackColor = Color.FromArgb(25, 42, 86);
-            recoverPasswordEmailTextBox.BorderStyle = BorderStyle.None;
-            recoverPasswordEmailTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            recoverPasswordEmailTextBox.ForeColor = Color.Silver;
-            recoverPasswordEmailTextBox.Location = new Point(240, 295);
-            recoverPasswordEmailTextBox.Name = "recoverPasswordEmailTextBox";
-            recoverPasswordEmailTextBox.Size = new Size(410, 24);
-            recoverPasswordEmailTextBox.TabIndex = 23;
-            recoverPasswordEmailTextBox.Text = "Correo electrónico";
+            this.recoverPasswordEmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
+            this.recoverPasswordEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.recoverPasswordEmailTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.recoverPasswordEmailTextBox.ForeColor = System.Drawing.Color.Silver;
+            this.recoverPasswordEmailTextBox.Location = new System.Drawing.Point(240, 295);
+            this.recoverPasswordEmailTextBox.Name = "recoverPasswordEmailTextBox";
+            this.recoverPasswordEmailTextBox.PlaceholderText = "Correo electrónico";
+            this.recoverPasswordEmailTextBox.Size = new System.Drawing.Size(410, 24);
+            this.recoverPasswordEmailTextBox.TabIndex = 23;
             // 
             // recoverPasswordLabel
             // 
-            recoverPasswordLabel.AutoSize = true;
-            recoverPasswordLabel.BackColor = Color.Transparent;
-            recoverPasswordLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            recoverPasswordLabel.ForeColor = Color.White;
-            recoverPasswordLabel.Location = new Point(318, 186);
-            recoverPasswordLabel.Name = "recoverPasswordLabel";
-            recoverPasswordLabel.Size = new Size(239, 25);
-            recoverPasswordLabel.TabIndex = 22;
-            recoverPasswordLabel.Text = "Recuperar contraseña";
+            this.recoverPasswordLabel.AutoSize = true;
+            this.recoverPasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.recoverPasswordLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.recoverPasswordLabel.ForeColor = System.Drawing.Color.White;
+            this.recoverPasswordLabel.Location = new System.Drawing.Point(318, 186);
+            this.recoverPasswordLabel.Name = "recoverPasswordLabel";
+            this.recoverPasswordLabel.Size = new System.Drawing.Size(239, 25);
+            this.recoverPasswordLabel.TabIndex = 22;
+            this.recoverPasswordLabel.Text = "Recuperar contraseña";
             // 
             // RecoverPasswordForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(25, 42, 86);
-            ClientSize = new Size(914, 676);
-            Controls.Add(backRecoverPasswordButton);
-            Controls.Add(recoverPasswordEmailButton);
-            Controls.Add(recoverPasswordEmailLineLabel);
-            Controls.Add(recoverPasswordEmailTextBox);
-            Controls.Add(recoverPasswordLabel);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "RecoverPasswordForm";
-            Text = "RecoverPasswordForm";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(914, 676);
+            this.Controls.Add(this.backRecoverPasswordButton);
+            this.Controls.Add(this.recoverPasswordEmailButton);
+            this.Controls.Add(this.recoverPasswordEmailLineLabel);
+            this.Controls.Add(this.recoverPasswordEmailTextBox);
+            this.Controls.Add(this.recoverPasswordLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "RecoverPasswordForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "RecoverPasswordForm";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
