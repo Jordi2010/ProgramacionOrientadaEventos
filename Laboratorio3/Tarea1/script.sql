@@ -10,7 +10,7 @@ GO
 CREATE TABLE [dbo].[usuarios](
     [idUsuario] [int] IDENTITY(1,1) NOT NULL,
     [usuario] [varchar](50) NOT NULL,
-    [contraseña] [varchar](50) NOT NULL,
+    [contraseña] [nvarchar](150) NOT NULL,
     [nombre] [varchar](50) NOT NULL,
     [apellido] [varchar](50) NOT NULL,
     [correo] [varchar](100) NOT NULL,
