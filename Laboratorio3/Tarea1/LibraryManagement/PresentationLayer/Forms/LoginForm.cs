@@ -26,10 +26,7 @@ namespace PresentationLayer.Forms
 
         }
 
-        private void closeLoginButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
 
         private void loginRegisterButton_MouseEnter(object sender, EventArgs e)
         {
@@ -60,8 +57,8 @@ namespace PresentationLayer.Forms
             }
             else
             {
-               
-                    AuthBussines authBusiness = new AuthBussines();
+
+                AuthBussines authBusiness = new AuthBussines();
 
                 try
                 {
@@ -93,7 +90,7 @@ namespace PresentationLayer.Forms
                 catch (Exception)
                 {
                     MessageBox.Show("Ocurrió un error durante el inicio de sesión.");
-                    throw; 
+                    throw;
                 }
 
 
@@ -126,6 +123,7 @@ namespace PresentationLayer.Forms
         private void closeLoginButton_Click_1(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
     }
 }
