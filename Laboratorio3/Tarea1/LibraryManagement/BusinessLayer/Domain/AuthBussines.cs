@@ -26,9 +26,6 @@ namespace BusinessLayer.Domain
         {
             return authData.Register(user);
         }
-        public string DuplicateEmailChecker(User user)
-        {
-            return authData.DuplicateEmailChecker(user);
-        }
+        
     }
 }

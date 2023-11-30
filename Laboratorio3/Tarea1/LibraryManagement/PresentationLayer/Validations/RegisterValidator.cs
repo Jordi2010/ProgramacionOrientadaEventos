@@ -39,10 +39,10 @@ namespace PresentationLayer.Validations
                 .MinimumLength(3).WithMessage("Por favor introduzca mínimo 3 carácteres.");
 
             RuleFor(user => user.Email)
-                .Cascade(CascadeMode.Stop)
-                .NotEmpty()
-                .WithMessage("El email no puede estar vacía.")
-                .MinimumLength(5).WithMessage("Por favor introduzca mínimo 8 carácteres.");
+                    .Cascade(CascadeMode.Stop)
+                    .NotEmpty().WithMessage("El email no puede estar vacío.")
+                    .MinimumLength(5).WithMessage("Por favor introduzca mínimo 5 caracteres.")
+                    .EmailAddress().WithMessage("El formato del correo electrónico es incorrecto.");
 
             RuleFor(user => user.Phone)
                 .Cascade(CascadeMode.Stop)

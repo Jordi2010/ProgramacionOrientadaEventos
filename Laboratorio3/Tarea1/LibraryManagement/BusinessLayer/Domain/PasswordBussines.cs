@@ -16,5 +16,15 @@ namespace BusinessLayer.Domain
         {
             return recoverPassword.RecoverPassword(user);
         }
+
+        public bool VerifiedPasswordCode(CodeRecover codeRecover)
+        {
+            return recoverPassword.VerifiedPasswordCode(codeRecover);
+        }
+
+        public bool ChangePasswordAndDeleteCode(User user, CodeRecover codeRecover)
+        {
+            return recoverPassword.ChangePasswordAndDeleteCode(user,codeRecover);
+        }
     }
 }

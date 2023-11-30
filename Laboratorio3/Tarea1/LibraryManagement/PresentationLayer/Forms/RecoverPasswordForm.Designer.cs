@@ -33,6 +33,7 @@
             this.recoverPasswordEmailLineLabel = new System.Windows.Forms.Label();
             this.recoverPasswordEmailTextBox = new System.Windows.Forms.TextBox();
             this.recoverPasswordLabel = new System.Windows.Forms.Label();
+            this.ConsumeCodeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backRecoverPasswordButton
@@ -97,6 +98,21 @@
             this.recoverPasswordLabel.TabIndex = 22;
             this.recoverPasswordLabel.Text = "Recuperar contraseña";
             // 
+            // ConsumeCodeButton
+            // 
+            this.ConsumeCodeButton.BackColor = System.Drawing.Color.Transparent;
+            this.ConsumeCodeButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ConsumeCodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConsumeCodeButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ConsumeCodeButton.ForeColor = System.Drawing.Color.Silver;
+            this.ConsumeCodeButton.Location = new System.Drawing.Point(240, 501);
+            this.ConsumeCodeButton.Name = "ConsumeCodeButton";
+            this.ConsumeCodeButton.Size = new System.Drawing.Size(410, 39);
+            this.ConsumeCodeButton.TabIndex = 37;
+            this.ConsumeCodeButton.Text = "Tengo mi codigo";
+            this.ConsumeCodeButton.UseVisualStyleBackColor = false;
+            this.ConsumeCodeButton.Click += new System.EventHandler(this.ConsumeCodeButton_Click);
+            // 
             // RecoverPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -104,6 +120,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(914, 676);
+            this.Controls.Add(this.ConsumeCodeButton);
             this.Controls.Add(this.backRecoverPasswordButton);
             this.Controls.Add(this.recoverPasswordEmailButton);
             this.Controls.Add(this.recoverPasswordEmailLineLabel);
@@ -125,5 +142,6 @@
         private Label recoverPasswordEmailLineLabel;
         private TextBox recoverPasswordEmailTextBox;
         private Label recoverPasswordLabel;
+        private Button ConsumeCodeButton;
     }
 }

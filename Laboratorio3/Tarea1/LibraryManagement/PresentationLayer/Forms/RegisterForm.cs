@@ -21,15 +21,18 @@ namespace PresentationLayer.Forms
 {
     public partial class RegisterForm : Form
     {
-        public RegisterForm()
+        private readonly LoginForm parentForm;
+        
+        public RegisterForm(LoginForm parentForm)
         {
             InitializeComponent();
+            this.parentForm = parentForm;
         }
 
         private void backRegisterButton_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
-            login.Show();
+            parentForm.ShowLoginFormControls();
+            parentForm.ShowLoginFormControls();
             this.Close();
         }
 
@@ -59,9 +62,7 @@ namespace PresentationLayer.Forms
             {
                 try
                 {
-                    //var duplicatedEmailCheked = authBussines.DuplicateEmailChecker(user);
-                    //if (duplicatedEmailCheked != registerEmailTextBox.Text)
-                    //{
+               
                         var rowsAffected = authBussines.RegisterUser(user);
                         if (rowsAffected > 0)
                         {
@@ -70,11 +71,7 @@ namespace PresentationLayer.Forms
                             loginForm.Show();
                             this.Hide();
                         }
-                    //}
-                    else
-                    {
-                        MessageBox.Show("¡Correo duplicado! \n Utiliza un Correo distinto.");
-                    }
+             
                 }
                 catch (Exception ex)
                 {

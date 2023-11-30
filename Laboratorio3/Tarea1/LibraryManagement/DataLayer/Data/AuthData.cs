@@ -91,36 +91,6 @@ namespace DataLayer.Data
             return password;
         }
 
-        public string DuplicateEmailChecker(User user)
-        {
-            _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT * FROM usuarios WHERE correo = @correo;";
-            _sqlCommand.Parameters.AddWithValue("@correo", user.Email);
-            _sqlCommand.CommandType = CommandType.Text;
-
-            _readerRows = _sqlCommand.ExecuteReader();
-
-            string correo = "";
-
-            if (_readerRows.Read() == true)
-            {
-                try
-                {
-                    correo = _readerRows.GetString(5);
-                }
-                catch (Exception ex)
-                {
-                    string error = ex.Message;
-                }
-            }
-
-            _readerRows.Close();
-            _readerRows.Dispose();
-            _connection.CloseConnection();
-
-            return correo;
-        }
-
         public int Register(User user)
         {
             _sqlCommand.Connection = _connection.OpenConnection();
