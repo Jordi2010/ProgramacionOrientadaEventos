@@ -54,10 +54,10 @@ namespace PresentationLayer.Forms
             {
                 ExitChangeRecoveryPasswordWithCode();
             }
-            
+
 
         }
-        
+
         private void ConsumeCodeButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("¿Deseas salir? \n Si utilizas tu codigo y sales de esta ventana, perderas la oportunidad de modificar tu contraseña.", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -83,8 +83,8 @@ namespace PresentationLayer.Forms
             if (passwordBussines.VerifiedPasswordCode(codeRecover))
             {
                 MessageBox.Show("Ingresa la nueva contraseña");
-                CodeToRecoverTextBox.Enabled= false;
-                ValidateCodeButton.Enabled= false;
+                CodeToRecoverTextBox.Enabled = false;
+                ValidateCodeButton.Enabled = false;
                 ShowContent();
             }
             else
@@ -115,9 +115,9 @@ namespace PresentationLayer.Forms
             }
             else
             {
-                user.Password= newPasswordTextBox.Text;
+                user.Password = newPasswordTextBox.Text;
                 PasswordBussines passwordBussines = new PasswordBussines();
-                if (passwordBussines.ChangePasswordAndDeleteCode(user,codeRecover))
+                if (passwordBussines.ChangePasswordAndDeleteCode(user, codeRecover))
                 {
                     MessageBox.Show("Cambio de contraseña exitoso!");
                     ExitChangeRecoveryPasswordWithCode();

@@ -19,7 +19,7 @@ namespace DataLayer.Data
         public DataTable GetAllReturn()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "select d.idDevoluciones AS ID, p.clientePrestamo AS Cliente, l.nombreLibro AS Nombre,  d.fechaDevolucionReal AS DevReal, d.idPrestamo AS IDP from devoluciones as d\r\ninner join prestamos as p on d.idPrestamo = p.idPrestamo\r\ninner join libros as l on p.idLibro = l.idLibro";
+            _sqlCommand.CommandText = "select devoluciones.idDevoluciones AS ID, prestamos.clientePrestamo AS Cliente, libros.nombreLibro AS Libro,  devoluciones.fechaDevolucionReal AS [Fecha de devolución real] from devoluciones \r\ninner join prestamos on devoluciones.idPrestamo = prestamos.idPrestamo\r\ninner join libros on prestamos.idLibro = libros.idLibro";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();

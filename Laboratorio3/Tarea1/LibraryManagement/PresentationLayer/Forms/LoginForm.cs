@@ -43,12 +43,6 @@ namespace PresentationLayer.Forms
             childForm.Show();
         }
 
-
-    
-
-
-     
-
         private void Logout(object sender, FormClosedEventArgs e)
         {
 
@@ -63,10 +57,7 @@ namespace PresentationLayer.Forms
                 control.Visible = true;
             }
         }
-   
 
-      
-   
         private void sizeLoginButton_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -92,63 +83,59 @@ namespace PresentationLayer.Forms
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-         
-                User user = new User();
 
-                user.UserName = loginUserTextBox.Text;
-                user.Password = loginPasswordTextBox.Text;
+            User user = new User();
 
-                UserValidator userValidator = new UserValidator();
-                ValidationResult userResult = userValidator.Validate(user);
+            user.UserName = loginUserTextBox.Text;
+            user.Password = loginPasswordTextBox.Text;
 
-                if (!userResult.IsValid)
+            UserValidator userValidator = new UserValidator();
+            ValidationResult userResult = userValidator.Validate(user);
+
+            if (!userResult.IsValid)
+            {
+                foreach (var failure in userResult.Errors)
                 {
-                    foreach (var failure in userResult.Errors)
-                    {
-                        MessageBox.Show("La propiedad " + failure.PropertyName + " no pasó la validación. El error fué el siguiente: " + failure.ErrorMessage);
-                    }
+                    MessageBox.Show("La propiedad " + failure.PropertyName + " no pasó la validación. El error fué el siguiente: " + failure.ErrorMessage);
                 }
-                else
+            }
+            else
+            {
+
+                AuthBussines authBusiness = new AuthBussines();
+
+                try
                 {
-
-                    AuthBussines authBusiness = new AuthBussines();
-
-                    try
+                    string hashedPassword = authBusiness.GetPasswordByUserName(user);
+                    bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(loginPasswordTextBox.Text, hashedPassword);
+                    if (isPasswordCorrect)
                     {
-                        string hashedPassword = authBusiness.GetPasswordByUserName(user);
-                        bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(loginPasswordTextBox.Text, hashedPassword);
-                        if (isPasswordCorrect)
+                        user.Password = hashedPassword;
+                        var credentials = authBusiness.LoginUser(user);
+                        if (credentials == true)
                         {
-                            user.Password = hashedPassword;
-                            var credentials = authBusiness.LoginUser(user);
-                            if (credentials == true)
-                            {
-                                DashboardForm dashboardForm = new DashboardForm();
-                                dashboardForm.Show();
-                                dashboardForm.FormClosed += Logout;
-                                this.Hide();
-                            }
-
+                            DashboardForm dashboardForm = new DashboardForm(user.UserName);
+                            dashboardForm.Show();
+                            dashboardForm.FormClosed += Logout;
+                            this.Hide();
                         }
-                        else
-                        {
-                            MessageBox.Show("El inicio de sesión no se pudo completar. Comprueba tus datos.");
 
-                        }
                     }
-                    catch (ArgumentException ex)
+                    else
                     {
                         MessageBox.Show("El inicio de sesión no se pudo completar. Comprueba tus datos.");
+
                     }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Ocurrió un error durante el inicio de sesión.");
-                        throw;
-                    }
-
-
-
-                
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show("El inicio de sesión no se pudo completar. Comprueba tus datos.");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ocurrió un error durante el inicio de sesión.");
+                    throw;
+                }
             }
         }
 
@@ -192,6 +179,18 @@ namespace PresentationLayer.Forms
         private void loginRegisterButton_MouseLeave(object sender, EventArgs e)
         {
             loginRegisterButton.BackColor = Color.Transparent;
+        }
+
+        private void SeePasswordpictureBox_Click(object sender, EventArgs e)
+        {
+            HidePasswordpictureBox.BringToFront();
+            loginPasswordTextBox.PasswordChar = '*';
+        }
+
+        private void HidePasswordpictureBox_Click(object sender, EventArgs e)
+        {
+            SeePasswordpictureBox.BringToFront();
+            loginPasswordTextBox.PasswordChar = '\0';
         }
     }
 }

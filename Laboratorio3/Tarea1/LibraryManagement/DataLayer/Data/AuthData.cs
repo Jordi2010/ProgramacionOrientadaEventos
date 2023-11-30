@@ -60,7 +60,7 @@ namespace DataLayer.Data
 
             return rowsAffected;
         }
-
+       
         public string GetPasswordByUserName(User user)
         {
             _sqlCommand.Connection = _connection.OpenConnection();
@@ -113,8 +113,6 @@ namespace DataLayer.Data
 
             return rowsAffected;
         }
-
-
 
     }
 }

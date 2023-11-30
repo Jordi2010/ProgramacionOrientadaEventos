@@ -38,14 +38,9 @@ namespace PresentationLayer.Forms
         public void LoadAllData()
         {
             LoadBookData();
-            //LoadAutoresData();
             LoadAutoresComboBoxData();
             LoadStatusComboBoxData();
-            /*LoadLoanData();
-            LoadReturnData();
-            LoadBookComboBoxData();
-            LoadLoanComboBoxData();
-            statusLoanCoamboBoxData();*/
+
         }
 
         private void LoadBookData()
@@ -177,7 +172,7 @@ namespace PresentationLayer.Forms
             if (bookDataGridView.SelectedRows.Count > 0)
             {
                 bookPublisherTextBox.Text = bookDataGridView.CurrentRow.Cells["Editorial"].Value.ToString();
-                bookTitleTextBox.Text = bookDataGridView.CurrentRow.Cells["Nombre"].Value.ToString();
+                bookTitleTextBox.Text = bookDataGridView.CurrentRow.Cells["Libro"].Value.ToString();
                 bookIsbnTextBox.Text = bookDataGridView.CurrentRow.Cells["ISBN"].Value.ToString();
                 bookGenreTextBox.Text = bookDataGridView.CurrentRow.Cells["Género"].Value.ToString();
                 bookAuthorComboBox.SelectedValue = bookDataGridView.CurrentRow.Cells["idAutor"].Value;

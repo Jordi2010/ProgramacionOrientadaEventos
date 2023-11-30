@@ -20,7 +20,7 @@ namespace PresentationLayer.Forms
         private readonly LoginForm parentForm;
         public RecoverPasswordForm(LoginForm parentForm)
         {
-            
+
             InitializeComponent();
             this.parentForm = parentForm;
         }
@@ -38,7 +38,7 @@ namespace PresentationLayer.Forms
             user.Email = recoverPasswordEmailTextBox.Text;
             RecoverPasswordValidator registerValidator = new RecoverPasswordValidator();
             ValidationResult emailResult = registerValidator.Validate(user);
-          
+
             if (!emailResult.IsValid)
             {
                 foreach (var failure in emailResult.Errors)
@@ -53,7 +53,7 @@ namespace PresentationLayer.Forms
                 MessageBox.Show(passwordBusiness.RecoverPassword(user));
             }
 
-         
+
 
         }
         private void ConsumeCodeButton_Click(object sender, EventArgs e)

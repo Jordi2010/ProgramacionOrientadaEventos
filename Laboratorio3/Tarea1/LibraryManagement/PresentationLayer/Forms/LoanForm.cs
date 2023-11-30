@@ -33,15 +33,8 @@ namespace PresentationLayer.Forms
 
         public void LoadAllData()
         {
-            /*LoadBookData();
-            LoadAutoresData();
-            LoadAutoresComboBoxData();
-            LoadStatusComboBoxData();*/
             LoadLoanData();
-            //LoadReturnData();
             LoadBookComboBoxData();
-            /*LoadLoanComboBoxData();
-            statusLoanCoamboBoxData();*/
         }
 
         private void LoadLoanData()
@@ -151,7 +144,7 @@ namespace PresentationLayer.Forms
                 loan.IdLoan = loanId;
 
                 loanBusiness.DeleteLoan(loan);
-                int idbook = int.Parse(loanDataGridView.CurrentRow.Cells["IDL"].Value.ToString());
+                int idbook = int.Parse(loanDataGridView.CurrentRow.Cells["ID"].Value.ToString());
                 book.IdBook = idbook;
                 book.IdStatus = 1;
                 bookBusiness.UpdateBookStatus(book);

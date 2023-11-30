@@ -224,9 +224,9 @@
             bookManagementLabel.ForeColor = Color.White;
             bookManagementLabel.Location = new Point(384, 11);
             bookManagementLabel.Name = "bookManagementLabel";
-            bookManagementLabel.Size = new Size(257, 25);
+            bookManagementLabel.Size = new Size(300, 25);
             bookManagementLabel.TabIndex = 15;
-            bookManagementLabel.Text = "Administración de libros";
+            bookManagementLabel.Text = "ADMINISTRACIÓN DE LIBROS";
             // 
             // bookInformationGroupBox
             // 

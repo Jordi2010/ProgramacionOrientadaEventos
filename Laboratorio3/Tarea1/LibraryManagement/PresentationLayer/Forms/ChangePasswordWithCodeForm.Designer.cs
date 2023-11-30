@@ -28,188 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backRecoverPasswordButton = new System.Windows.Forms.Button();
-            this.ValidateCodeButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.CodeToRecoverTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.confirmPasswordLineLabel = new System.Windows.Forms.Label();
-            this.confirmPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.ConsumeCodeButton = new System.Windows.Forms.Button();
-            this.recoverPasswordButton = new System.Windows.Forms.Button();
-            this.newPasswordLineLabel = new System.Windows.Forms.Label();
-            this.newPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.titlePasswordLabel = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordWithCodeForm));
+            backRecoverPasswordButton = new Button();
+            ValidateCodeButton = new Button();
+            label3 = new Label();
+            CodeToRecoverTextBox = new TextBox();
+            label2 = new Label();
+            confirmPasswordLineLabel = new Label();
+            confirmPasswordTextBox = new TextBox();
+            ConsumeCodeButton = new Button();
+            recoverPasswordButton = new Button();
+            newPasswordLineLabel = new Label();
+            newPasswordTextBox = new TextBox();
+            titlePasswordLabel = new Label();
+            SuspendLayout();
             // 
             // backRecoverPasswordButton
             // 
-            this.backRecoverPasswordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.backRecoverPasswordButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.backRecoverPasswordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backRecoverPasswordButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backRecoverPasswordButton.ForeColor = System.Drawing.Color.Silver;
-            this.backRecoverPasswordButton.Location = new System.Drawing.Point(12, 12);
-            this.backRecoverPasswordButton.Name = "backRecoverPasswordButton";
-            this.backRecoverPasswordButton.Size = new System.Drawing.Size(81, 30);
-            this.backRecoverPasswordButton.TabIndex = 38;
-            this.backRecoverPasswordButton.Text = "⬅️ Volver";
-            this.backRecoverPasswordButton.UseVisualStyleBackColor = true;
-            this.backRecoverPasswordButton.Click += new System.EventHandler(this.backRecoverPasswordButton_Click);
+            backRecoverPasswordButton.BackgroundImage = (Image)resources.GetObject("backRecoverPasswordButton.BackgroundImage");
+            backRecoverPasswordButton.BackgroundImageLayout = ImageLayout.Stretch;
+            backRecoverPasswordButton.FlatAppearance.BorderColor = Color.FromArgb(25, 42, 86);
+            backRecoverPasswordButton.FlatStyle = FlatStyle.Flat;
+            backRecoverPasswordButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            backRecoverPasswordButton.ForeColor = Color.Silver;
+            backRecoverPasswordButton.Location = new Point(12, 12);
+            backRecoverPasswordButton.Name = "backRecoverPasswordButton";
+            backRecoverPasswordButton.Size = new Size(50, 48);
+            backRecoverPasswordButton.TabIndex = 38;
+            backRecoverPasswordButton.UseVisualStyleBackColor = true;
+            backRecoverPasswordButton.Click += backRecoverPasswordButton_Click;
             // 
             // ValidateCodeButton
             // 
-            this.ValidateCodeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
-            this.ValidateCodeButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.ValidateCodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ValidateCodeButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ValidateCodeButton.ForeColor = System.Drawing.Color.Silver;
-            this.ValidateCodeButton.Location = new System.Drawing.Point(252, 190);
-            this.ValidateCodeButton.Name = "ValidateCodeButton";
-            this.ValidateCodeButton.Size = new System.Drawing.Size(410, 39);
-            this.ValidateCodeButton.TabIndex = 59;
-            this.ValidateCodeButton.Text = "Validar Codigo";
-            this.ValidateCodeButton.UseVisualStyleBackColor = false;
-            this.ValidateCodeButton.Click += new System.EventHandler(this.ValidateCodeButton_Click);
+            ValidateCodeButton.BackColor = Color.FromArgb(10, 61, 98);
+            ValidateCodeButton.FlatAppearance.BorderColor = Color.Teal;
+            ValidateCodeButton.FlatStyle = FlatStyle.Flat;
+            ValidateCodeButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ValidateCodeButton.ForeColor = Color.Silver;
+            ValidateCodeButton.Location = new Point(255, 223);
+            ValidateCodeButton.Name = "ValidateCodeButton";
+            ValidateCodeButton.Size = new Size(410, 39);
+            ValidateCodeButton.TabIndex = 59;
+            ValidateCodeButton.Text = "Validar Código";
+            ValidateCodeButton.UseVisualStyleBackColor = false;
+            ValidateCodeButton.Click += ValidateCodeButton_Click;
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(253, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(410, 2);
-            this.label3.TabIndex = 58;
+            label3.BackColor = Color.Silver;
+            label3.Location = new Point(255, 194);
+            label3.Name = "label3";
+            label3.Size = new Size(410, 2);
+            label3.TabIndex = 58;
             // 
             // CodeToRecoverTextBox
             // 
-            this.CodeToRecoverTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.CodeToRecoverTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CodeToRecoverTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CodeToRecoverTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.CodeToRecoverTextBox.Location = new System.Drawing.Point(253, 135);
-            this.CodeToRecoverTextBox.Name = "CodeToRecoverTextBox";
-            this.CodeToRecoverTextBox.PlaceholderText = "Codigo";
-            this.CodeToRecoverTextBox.Size = new System.Drawing.Size(410, 24);
-            this.CodeToRecoverTextBox.TabIndex = 57;
+            CodeToRecoverTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            CodeToRecoverTextBox.BorderStyle = BorderStyle.None;
+            CodeToRecoverTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            CodeToRecoverTextBox.ForeColor = Color.Silver;
+            CodeToRecoverTextBox.Location = new Point(255, 166);
+            CodeToRecoverTextBox.Name = "CodeToRecoverTextBox";
+            CodeToRecoverTextBox.PlaceholderText = "Código";
+            CodeToRecoverTextBox.Size = new Size(410, 24);
+            CodeToRecoverTextBox.TabIndex = 57;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(336, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 25);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "Introduce el codigo.";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(330, 118);
+            label2.Name = "label2";
+            label2.Size = new Size(252, 25);
+            label2.TabIndex = 56;
+            label2.Text = "INTRODUCE EL CÓDIGO";
             // 
             // confirmPasswordLineLabel
             // 
-            this.confirmPasswordLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.confirmPasswordLineLabel.Location = new System.Drawing.Point(252, 438);
-            this.confirmPasswordLineLabel.Name = "confirmPasswordLineLabel";
-            this.confirmPasswordLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.confirmPasswordLineLabel.TabIndex = 55;
+            confirmPasswordLineLabel.BackColor = Color.Silver;
+            confirmPasswordLineLabel.Location = new Point(253, 437);
+            confirmPasswordLineLabel.Name = "confirmPasswordLineLabel";
+            confirmPasswordLineLabel.Size = new Size(410, 2);
+            confirmPasswordLineLabel.TabIndex = 55;
             // 
             // confirmPasswordTextBox
             // 
-            this.confirmPasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.confirmPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmPasswordTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.confirmPasswordTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.confirmPasswordTextBox.Location = new System.Drawing.Point(252, 410);
-            this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
-            this.confirmPasswordTextBox.PlaceholderText = "Repite la contraseña";
-            this.confirmPasswordTextBox.Size = new System.Drawing.Size(410, 24);
-            this.confirmPasswordTextBox.TabIndex = 54;
+            confirmPasswordTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            confirmPasswordTextBox.BorderStyle = BorderStyle.None;
+            confirmPasswordTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            confirmPasswordTextBox.ForeColor = Color.Silver;
+            confirmPasswordTextBox.Location = new Point(255, 410);
+            confirmPasswordTextBox.Name = "confirmPasswordTextBox";
+            confirmPasswordTextBox.PlaceholderText = "Repite la contraseña";
+            confirmPasswordTextBox.Size = new Size(410, 24);
+            confirmPasswordTextBox.TabIndex = 54;
             // 
             // ConsumeCodeButton
             // 
-            this.ConsumeCodeButton.BackColor = System.Drawing.Color.Transparent;
-            this.ConsumeCodeButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ConsumeCodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConsumeCodeButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ConsumeCodeButton.ForeColor = System.Drawing.Color.Silver;
-            this.ConsumeCodeButton.Location = new System.Drawing.Point(252, 556);
-            this.ConsumeCodeButton.Name = "ConsumeCodeButton";
-            this.ConsumeCodeButton.Size = new System.Drawing.Size(410, 39);
-            this.ConsumeCodeButton.TabIndex = 53;
-            this.ConsumeCodeButton.Text = "Cancelar";
-            this.ConsumeCodeButton.UseVisualStyleBackColor = false;
-            this.ConsumeCodeButton.Click += new System.EventHandler(this.ConsumeCodeButton_Click);
+            ConsumeCodeButton.BackColor = Color.FromArgb(10, 61, 98);
+            ConsumeCodeButton.FlatAppearance.BorderColor = Color.Silver;
+            ConsumeCodeButton.FlatStyle = FlatStyle.Flat;
+            ConsumeCodeButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ConsumeCodeButton.ForeColor = Color.Silver;
+            ConsumeCodeButton.Location = new Point(253, 550);
+            ConsumeCodeButton.Name = "ConsumeCodeButton";
+            ConsumeCodeButton.Size = new Size(410, 39);
+            ConsumeCodeButton.TabIndex = 53;
+            ConsumeCodeButton.Text = "Cancelar";
+            ConsumeCodeButton.UseVisualStyleBackColor = false;
+            ConsumeCodeButton.Click += ConsumeCodeButton_Click;
             // 
             // recoverPasswordButton
             // 
-            this.recoverPasswordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
-            this.recoverPasswordButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.recoverPasswordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recoverPasswordButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.recoverPasswordButton.ForeColor = System.Drawing.Color.Silver;
-            this.recoverPasswordButton.Location = new System.Drawing.Point(252, 487);
-            this.recoverPasswordButton.Name = "recoverPasswordButton";
-            this.recoverPasswordButton.Size = new System.Drawing.Size(410, 39);
-            this.recoverPasswordButton.TabIndex = 52;
-            this.recoverPasswordButton.Text = "Guardar nueva contraseña";
-            this.recoverPasswordButton.UseVisualStyleBackColor = false;
-            this.recoverPasswordButton.Click += new System.EventHandler(this.recoverPasswordButton_Click);
+            recoverPasswordButton.BackColor = Color.FromArgb(10, 61, 98);
+            recoverPasswordButton.FlatAppearance.BorderColor = Color.Teal;
+            recoverPasswordButton.FlatStyle = FlatStyle.Flat;
+            recoverPasswordButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            recoverPasswordButton.ForeColor = Color.Silver;
+            recoverPasswordButton.Location = new Point(255, 469);
+            recoverPasswordButton.Name = "recoverPasswordButton";
+            recoverPasswordButton.Size = new Size(410, 39);
+            recoverPasswordButton.TabIndex = 52;
+            recoverPasswordButton.Text = "Guardar nueva contraseña";
+            recoverPasswordButton.UseVisualStyleBackColor = false;
+            recoverPasswordButton.Click += recoverPasswordButton_Click;
             // 
             // newPasswordLineLabel
             // 
-            this.newPasswordLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.newPasswordLineLabel.Location = new System.Drawing.Point(253, 393);
-            this.newPasswordLineLabel.Name = "newPasswordLineLabel";
-            this.newPasswordLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.newPasswordLineLabel.TabIndex = 51;
+            newPasswordLineLabel.BackColor = Color.Silver;
+            newPasswordLineLabel.Location = new Point(254, 392);
+            newPasswordLineLabel.Name = "newPasswordLineLabel";
+            newPasswordLineLabel.Size = new Size(410, 2);
+            newPasswordLineLabel.TabIndex = 51;
             // 
             // newPasswordTextBox
             // 
-            this.newPasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.newPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.newPasswordTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.newPasswordTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.newPasswordTextBox.Location = new System.Drawing.Point(253, 365);
-            this.newPasswordTextBox.Name = "newPasswordTextBox";
-            this.newPasswordTextBox.PlaceholderText = "Nueva contraseña";
-            this.newPasswordTextBox.Size = new System.Drawing.Size(410, 24);
-            this.newPasswordTextBox.TabIndex = 50;
+            newPasswordTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            newPasswordTextBox.BorderStyle = BorderStyle.None;
+            newPasswordTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            newPasswordTextBox.ForeColor = Color.Silver;
+            newPasswordTextBox.Location = new Point(255, 365);
+            newPasswordTextBox.Name = "newPasswordTextBox";
+            newPasswordTextBox.PlaceholderText = "Nueva contraseña";
+            newPasswordTextBox.Size = new Size(410, 24);
+            newPasswordTextBox.TabIndex = 50;
             // 
             // titlePasswordLabel
             // 
-            this.titlePasswordLabel.AutoSize = true;
-            this.titlePasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.titlePasswordLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.titlePasswordLabel.ForeColor = System.Drawing.Color.White;
-            this.titlePasswordLabel.Location = new System.Drawing.Point(304, 288);
-            this.titlePasswordLabel.Name = "titlePasswordLabel";
-            this.titlePasswordLabel.Size = new System.Drawing.Size(300, 25);
-            this.titlePasswordLabel.TabIndex = 49;
-            this.titlePasswordLabel.Text = "Crea una nueva contraseña";
+            titlePasswordLabel.AutoSize = true;
+            titlePasswordLabel.BackColor = Color.Transparent;
+            titlePasswordLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            titlePasswordLabel.ForeColor = Color.White;
+            titlePasswordLabel.Location = new Point(294, 298);
+            titlePasswordLabel.Name = "titlePasswordLabel";
+            titlePasswordLabel.Size = new Size(344, 25);
+            titlePasswordLabel.TabIndex = 49;
+            titlePasswordLabel.Text = "CREA UNA NUEVA CONTRASEÑA";
             // 
             // ChangePasswordWithCodeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(914, 676);
-            this.Controls.Add(this.ValidateCodeButton);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.CodeToRecoverTextBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.confirmPasswordLineLabel);
-            this.Controls.Add(this.confirmPasswordTextBox);
-            this.Controls.Add(this.ConsumeCodeButton);
-            this.Controls.Add(this.recoverPasswordButton);
-            this.Controls.Add(this.newPasswordLineLabel);
-            this.Controls.Add(this.newPasswordTextBox);
-            this.Controls.Add(this.titlePasswordLabel);
-            this.Controls.Add(this.backRecoverPasswordButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ChangePasswordWithCodeForm";
-            this.Text = "ChangePasswordWithCodeForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(25, 42, 86);
+            ClientSize = new Size(914, 676);
+            Controls.Add(ValidateCodeButton);
+            Controls.Add(label3);
+            Controls.Add(CodeToRecoverTextBox);
+            Controls.Add(label2);
+            Controls.Add(confirmPasswordLineLabel);
+            Controls.Add(confirmPasswordTextBox);
+            Controls.Add(ConsumeCodeButton);
+            Controls.Add(recoverPasswordButton);
+            Controls.Add(newPasswordLineLabel);
+            Controls.Add(newPasswordTextBox);
+            Controls.Add(titlePasswordLabel);
+            Controls.Add(backRecoverPasswordButton);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "ChangePasswordWithCodeForm";
+            Text = "ChangePasswordWithCodeForm";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

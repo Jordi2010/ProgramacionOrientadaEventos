@@ -19,7 +19,7 @@ namespace DataLayer.Data
         public DataTable GetAllLoan()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "select p.idPrestamo AS ID, l.nombreLibro AS Nombre, p.clientePrestamo AS Cliente,ep.estadoPrestamo AS Estado, p.fechaDevolucionEstimada AS Devolución, p.fechaPrestamo AS Prestó, p.idLibro AS IDL, p.idestadoPrestamo AS IDP from prestamos as p\r\ninner join estadoPrestamo as ep on p.idestadoPrestamo = ep.idestadoPrestamo\r\ninner join libros as l on p.idLibro = l.idLibro";
+            _sqlCommand.CommandText = " select prestamos.idPrestamo AS ID, libros.nombreLibro AS Libro, prestamos.clientePrestamo AS Cliente,estadoPrestamo.estadoPrestamo AS Estado,prestamos.fechaPrestamo AS [Fecha de préstamo],prestamos.fechaDevolucionEstimada AS [Fecha de devolución] from prestamos inner join estadoPrestamo on prestamos.idestadoPrestamo = estadoPrestamo.idestadoPrestamo inner join libros on prestamos.idLibro = libros.idLibro;";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();
@@ -57,7 +57,7 @@ namespace DataLayer.Data
         public DataTable GetFilterLoan()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "select p.idPrestamo, l.nombreLibro, p.clientePrestamo,ep.estadoPrestamo, p.fechaDevolucionEstimada, p.fechaPrestamo, p.idLibro, p.idestadoPrestamo from prestamos as p\r\ninner join estadoPrestamo as ep on p.idestadoPrestamo = ep.idestadoPrestamo\r\ninner join libros as l on p.idLibro = l.idLibro where p.idestadoPrestamo = 2 ";
+            _sqlCommand.CommandText = "select prestamos.idPrestamo, libros.nombreLibro, prestamos.clientePrestamo,estadoPrestamo.estadoPrestamo, prestamos.fechaDevolucionEstimada, prestamos.fechaPrestamo, prestamos.idLibro, prestamos.idestadoPrestamo from prestamos inner join estadoPrestamo on prestamos.idestadoPrestamo = estadoPrestamo.idestadoPrestamo inner join libros on prestamos.idLibro = libros.idLibro where prestamos.idestadoPrestamo = 2";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();

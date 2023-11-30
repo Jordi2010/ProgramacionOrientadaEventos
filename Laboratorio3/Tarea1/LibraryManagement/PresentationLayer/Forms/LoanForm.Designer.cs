@@ -268,9 +268,9 @@
             loanManagementLabel.ForeColor = Color.White;
             loanManagementLabel.Location = new Point(384, 11);
             loanManagementLabel.Name = "loanManagementLabel";
-            loanManagementLabel.Size = new Size(309, 25);
+            loanManagementLabel.Size = new Size(351, 25);
             loanManagementLabel.TabIndex = 29;
-            loanManagementLabel.Text = "Administración de préstamos";
+            loanManagementLabel.Text = "ADMINISTRACIÓN DE PRÉSTAMOS";
             // 
             // LoanForm
             // 

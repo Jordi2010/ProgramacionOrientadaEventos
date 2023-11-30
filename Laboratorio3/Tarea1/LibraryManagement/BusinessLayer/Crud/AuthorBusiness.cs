@@ -35,5 +35,11 @@ namespace BusinessLayer.Crud
         {
             authorData.DeleteAuthor(author);
         }
+        public DataTable SearchAuthor(string search)
+        {
+            DataTable authorTable = new DataTable();
+            authorTable = authorData.SearchAuthor(search);
+            return authorTable;
+        }
     }
 }

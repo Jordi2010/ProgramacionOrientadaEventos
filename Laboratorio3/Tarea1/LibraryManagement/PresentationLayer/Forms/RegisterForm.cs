@@ -22,7 +22,7 @@ namespace PresentationLayer.Forms
     public partial class RegisterForm : Form
     {
         private readonly LoginForm parentForm;
-        
+
         public RegisterForm(LoginForm parentForm)
         {
             InitializeComponent();
@@ -43,10 +43,10 @@ namespace PresentationLayer.Forms
 
             user.UserName = registerUserTextBox.Text;
             user.Password = registerPasswordTextBox.Text;
-            user.Name= registerNameTextBox.Text;
-            user.LastName=registerLastNameTextBox.Text;
-            user.Email=registerEmailTextBox.Text;
-            user.Phone=registerPhoneTextBox.Text;
+            user.Name = registerNameTextBox.Text;
+            user.LastName = registerLastNameTextBox.Text;
+            user.Email = registerEmailTextBox.Text;
+            user.Phone = registerPhoneTextBox.Text;
 
             RegisterValidator registerValidator = new RegisterValidator();
             ValidationResult userResult = registerValidator.Validate(user);
@@ -62,23 +62,38 @@ namespace PresentationLayer.Forms
             {
                 try
                 {
-               
-                        var rowsAffected = authBussines.RegisterUser(user);
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Usuario Creado");
-                            LoginForm loginForm = new LoginForm();
-                            loginForm.Show();
-                            this.Hide();
-                        }
-             
+
+                    var rowsAffected = authBussines.RegisterUser(user);
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Usuario Creado");
+
+                        // Volver al formulario de inicio de sesión y mostrar los controles correspondientes
+                        parentForm.ShowLoginFormControls();
+
+                        // Cerrar el formulario actual (RegisterForm)
+                        this.Close();
+                    }
+
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
-           
+
+        }
+
+        private void HidePasswordRegisterPictureBox_Click(object sender, EventArgs e)
+        {
+            SeePasswordRegisterPictureBox.BringToFront();
+            registerPasswordTextBox.PasswordChar = '\0';
+        }
+
+        private void SeePasswordRegisterPictureBox_Click(object sender, EventArgs e)
+        {
+            HidePasswordRegisterPictureBox.BringToFront();
+            registerPasswordTextBox.PasswordChar = '*';
         }
     }
 }

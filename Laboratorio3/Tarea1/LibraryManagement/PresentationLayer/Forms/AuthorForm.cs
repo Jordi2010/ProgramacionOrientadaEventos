@@ -92,7 +92,7 @@ namespace PresentationLayer.Forms
                 }
                 else
                 {
-                    author.IdAuthor = int.Parse(authorDataGridView.CurrentRow.Cells["idAutor"].Value.ToString());
+                    author.IdAuthor = int.Parse(authorDataGridView.CurrentRow.Cells["ID"].Value.ToString());
                     authorBusiness.UpdateAuthor(author);
                     isEditMode = false;
                 }
@@ -133,6 +133,11 @@ namespace PresentationLayer.Forms
             {
                 MessageBox.Show("Debe seleccionar una fila antes de eliminar");
             }
+        }
+        private void authorSearchTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            AuthorBusiness authorBusiness = new AuthorBusiness();
+            authorDataGridView.DataSource = authorBusiness.SearchAuthor(authorSearchTextBox.Text);
         }
     }
 }

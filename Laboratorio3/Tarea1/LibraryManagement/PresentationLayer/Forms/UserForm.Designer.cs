@@ -134,9 +134,9 @@
             userManagementLabel.ForeColor = Color.White;
             userManagementLabel.Location = new Point(407, 15);
             userManagementLabel.Name = "userManagementLabel";
-            userManagementLabel.Size = new Size(287, 25);
+            userManagementLabel.Size = new Size(334, 25);
             userManagementLabel.TabIndex = 28;
-            userManagementLabel.Text = "Administración de usuarios";
+            userManagementLabel.Text = "ADMINISTRACIÓN DE USUARIOS";
             // 
             // userInformationGroupBox
             // 

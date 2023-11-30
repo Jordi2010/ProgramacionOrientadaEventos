@@ -28,214 +28,244 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.registerButton = new System.Windows.Forms.Button();
-            this.registerNameLineLabel = new System.Windows.Forms.Label();
-            this.registerNameTextBox = new System.Windows.Forms.TextBox();
-            this.registerUserLineLabel = new System.Windows.Forms.Label();
-            this.registerUserTextBox = new System.Windows.Forms.TextBox();
-            this.registerLabel = new System.Windows.Forms.Label();
-            this.registerPhoneLineLabel = new System.Windows.Forms.Label();
-            this.registerPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.registerLastNameLineLabel = new System.Windows.Forms.Label();
-            this.registerLastNameTextBox = new System.Windows.Forms.TextBox();
-            this.registerPasswordLineLabel = new System.Windows.Forms.Label();
-            this.registerPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.registerEmailLineLabel = new System.Windows.Forms.Label();
-            this.registerEmailTextBox = new System.Windows.Forms.TextBox();
-            this.backRegisterButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
+            registerButton = new Button();
+            registerNameLineLabel = new Label();
+            registerNameTextBox = new TextBox();
+            registerUserLineLabel = new Label();
+            registerUserTextBox = new TextBox();
+            registerLabel = new Label();
+            registerPhoneLineLabel = new Label();
+            registerPhoneTextBox = new TextBox();
+            registerLastNameLineLabel = new Label();
+            registerLastNameTextBox = new TextBox();
+            registerPasswordLineLabel = new Label();
+            registerPasswordTextBox = new TextBox();
+            registerEmailLineLabel = new Label();
+            registerEmailTextBox = new TextBox();
+            backRegisterButton = new Button();
+            HidePasswordRegisterPictureBox = new PictureBox();
+            SeePasswordRegisterPictureBox = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)HidePasswordRegisterPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)SeePasswordRegisterPictureBox).BeginInit();
+            SuspendLayout();
             // 
             // registerButton
             // 
-            this.registerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
-            this.registerButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerButton.ForeColor = System.Drawing.Color.Silver;
-            this.registerButton.Location = new System.Drawing.Point(238, 459);
-            this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(410, 39);
-            this.registerButton.TabIndex = 11;
-            this.registerButton.Text = "Registrarse";
-            this.registerButton.UseVisualStyleBackColor = false;
-            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
+            registerButton.BackColor = Color.FromArgb(10, 61, 98);
+            registerButton.FlatAppearance.BorderColor = Color.Teal;
+            registerButton.FlatStyle = FlatStyle.Flat;
+            registerButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerButton.ForeColor = Color.Silver;
+            registerButton.Location = new Point(275, 529);
+            registerButton.Name = "registerButton";
+            registerButton.Size = new Size(410, 39);
+            registerButton.TabIndex = 11;
+            registerButton.Text = "Registrarse";
+            registerButton.UseVisualStyleBackColor = false;
+            registerButton.Click += registerButton_Click;
             // 
             // registerNameLineLabel
             // 
-            this.registerNameLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerNameLineLabel.Location = new System.Drawing.Point(238, 213);
-            this.registerNameLineLabel.Name = "registerNameLineLabel";
-            this.registerNameLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerNameLineLabel.TabIndex = 10;
+            registerNameLineLabel.BackColor = Color.Silver;
+            registerNameLineLabel.Location = new Point(275, 283);
+            registerNameLineLabel.Name = "registerNameLineLabel";
+            registerNameLineLabel.Size = new Size(410, 2);
+            registerNameLineLabel.TabIndex = 10;
             // 
             // registerNameTextBox
             // 
-            this.registerNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerNameTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerNameTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerNameTextBox.Location = new System.Drawing.Point(239, 185);
-            this.registerNameTextBox.Name = "registerNameTextBox";
-            this.registerNameTextBox.PlaceholderText = "Nombre";
-            this.registerNameTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerNameTextBox.TabIndex = 9;
+            registerNameTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerNameTextBox.BorderStyle = BorderStyle.None;
+            registerNameTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerNameTextBox.ForeColor = Color.Silver;
+            registerNameTextBox.Location = new Point(276, 255);
+            registerNameTextBox.Name = "registerNameTextBox";
+            registerNameTextBox.PlaceholderText = "Nombre";
+            registerNameTextBox.Size = new Size(410, 24);
+            registerNameTextBox.TabIndex = 9;
             // 
             // registerUserLineLabel
             // 
-            this.registerUserLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerUserLineLabel.Location = new System.Drawing.Point(239, 160);
-            this.registerUserLineLabel.Name = "registerUserLineLabel";
-            this.registerUserLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerUserLineLabel.TabIndex = 8;
+            registerUserLineLabel.BackColor = Color.Silver;
+            registerUserLineLabel.Location = new Point(276, 230);
+            registerUserLineLabel.Name = "registerUserLineLabel";
+            registerUserLineLabel.Size = new Size(410, 2);
+            registerUserLineLabel.TabIndex = 8;
             // 
             // registerUserTextBox
             // 
-            this.registerUserTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerUserTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerUserTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerUserTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerUserTextBox.Location = new System.Drawing.Point(239, 132);
-            this.registerUserTextBox.Name = "registerUserTextBox";
-            this.registerUserTextBox.PlaceholderText = "Usuario";
-            this.registerUserTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerUserTextBox.TabIndex = 7;
+            registerUserTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerUserTextBox.BorderStyle = BorderStyle.None;
+            registerUserTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerUserTextBox.ForeColor = Color.Silver;
+            registerUserTextBox.Location = new Point(276, 202);
+            registerUserTextBox.Name = "registerUserTextBox";
+            registerUserTextBox.PlaceholderText = "Usuario";
+            registerUserTextBox.Size = new Size(410, 24);
+            registerUserTextBox.TabIndex = 7;
             // 
             // registerLabel
             // 
-            this.registerLabel.AutoSize = true;
-            this.registerLabel.BackColor = System.Drawing.Color.Transparent;
-            this.registerLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerLabel.ForeColor = System.Drawing.Color.White;
-            this.registerLabel.Location = new System.Drawing.Point(312, 69);
-            this.registerLabel.Name = "registerLabel";
-            this.registerLabel.Size = new System.Drawing.Size(248, 25);
-            this.registerLabel.TabIndex = 6;
-            this.registerLabel.Text = "Registrar nueva cuenta";
+            registerLabel.AutoSize = true;
+            registerLabel.BackColor = Color.Transparent;
+            registerLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            registerLabel.ForeColor = Color.White;
+            registerLabel.Location = new Point(328, 135);
+            registerLabel.Name = "registerLabel";
+            registerLabel.Size = new Size(285, 25);
+            registerLabel.TabIndex = 6;
+            registerLabel.Text = "REGISTRAR NUEVA CUENTA";
             // 
             // registerPhoneLineLabel
             // 
-            this.registerPhoneLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerPhoneLineLabel.Location = new System.Drawing.Point(237, 323);
-            this.registerPhoneLineLabel.Name = "registerPhoneLineLabel";
-            this.registerPhoneLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerPhoneLineLabel.TabIndex = 15;
+            registerPhoneLineLabel.BackColor = Color.Silver;
+            registerPhoneLineLabel.Location = new Point(274, 393);
+            registerPhoneLineLabel.Name = "registerPhoneLineLabel";
+            registerPhoneLineLabel.Size = new Size(410, 2);
+            registerPhoneLineLabel.TabIndex = 15;
             // 
             // registerPhoneTextBox
             // 
-            this.registerPhoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerPhoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerPhoneTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerPhoneTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerPhoneTextBox.Location = new System.Drawing.Point(238, 295);
-            this.registerPhoneTextBox.Name = "registerPhoneTextBox";
-            this.registerPhoneTextBox.PlaceholderText = "Teléfono";
-            this.registerPhoneTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerPhoneTextBox.TabIndex = 14;
+            registerPhoneTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerPhoneTextBox.BorderStyle = BorderStyle.None;
+            registerPhoneTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerPhoneTextBox.ForeColor = Color.Silver;
+            registerPhoneTextBox.Location = new Point(275, 365);
+            registerPhoneTextBox.Name = "registerPhoneTextBox";
+            registerPhoneTextBox.PlaceholderText = "Teléfono";
+            registerPhoneTextBox.Size = new Size(410, 24);
+            registerPhoneTextBox.TabIndex = 14;
             // 
             // registerLastNameLineLabel
             // 
-            this.registerLastNameLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerLastNameLineLabel.Location = new System.Drawing.Point(238, 268);
-            this.registerLastNameLineLabel.Name = "registerLastNameLineLabel";
-            this.registerLastNameLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerLastNameLineLabel.TabIndex = 13;
+            registerLastNameLineLabel.BackColor = Color.Silver;
+            registerLastNameLineLabel.Location = new Point(275, 338);
+            registerLastNameLineLabel.Name = "registerLastNameLineLabel";
+            registerLastNameLineLabel.Size = new Size(410, 2);
+            registerLastNameLineLabel.TabIndex = 13;
             // 
             // registerLastNameTextBox
             // 
-            this.registerLastNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerLastNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerLastNameTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerLastNameTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerLastNameTextBox.Location = new System.Drawing.Point(238, 240);
-            this.registerLastNameTextBox.Name = "registerLastNameTextBox";
-            this.registerLastNameTextBox.PlaceholderText = "Apellido";
-            this.registerLastNameTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerLastNameTextBox.TabIndex = 12;
+            registerLastNameTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerLastNameTextBox.BorderStyle = BorderStyle.None;
+            registerLastNameTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerLastNameTextBox.ForeColor = Color.Silver;
+            registerLastNameTextBox.Location = new Point(275, 310);
+            registerLastNameTextBox.Name = "registerLastNameTextBox";
+            registerLastNameTextBox.PlaceholderText = "Apellido";
+            registerLastNameTextBox.Size = new Size(410, 24);
+            registerLastNameTextBox.TabIndex = 12;
             // 
             // registerPasswordLineLabel
             // 
-            this.registerPasswordLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerPasswordLineLabel.Location = new System.Drawing.Point(236, 428);
-            this.registerPasswordLineLabel.Name = "registerPasswordLineLabel";
-            this.registerPasswordLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerPasswordLineLabel.TabIndex = 19;
+            registerPasswordLineLabel.BackColor = Color.Silver;
+            registerPasswordLineLabel.Location = new Point(273, 498);
+            registerPasswordLineLabel.Name = "registerPasswordLineLabel";
+            registerPasswordLineLabel.Size = new Size(410, 2);
+            registerPasswordLineLabel.TabIndex = 19;
             // 
             // registerPasswordTextBox
             // 
-            this.registerPasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerPasswordTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerPasswordTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerPasswordTextBox.Location = new System.Drawing.Point(237, 400);
-            this.registerPasswordTextBox.Name = "registerPasswordTextBox";
-            this.registerPasswordTextBox.PasswordChar = '*';
-            this.registerPasswordTextBox.PlaceholderText = "Contraseña";
-            this.registerPasswordTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerPasswordTextBox.TabIndex = 18;
+            registerPasswordTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerPasswordTextBox.BorderStyle = BorderStyle.None;
+            registerPasswordTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerPasswordTextBox.ForeColor = Color.Silver;
+            registerPasswordTextBox.Location = new Point(274, 470);
+            registerPasswordTextBox.Name = "registerPasswordTextBox";
+            registerPasswordTextBox.PasswordChar = '*';
+            registerPasswordTextBox.PlaceholderText = "Contraseña";
+            registerPasswordTextBox.Size = new Size(410, 24);
+            registerPasswordTextBox.TabIndex = 18;
             // 
             // registerEmailLineLabel
             // 
-            this.registerEmailLineLabel.BackColor = System.Drawing.Color.Silver;
-            this.registerEmailLineLabel.Location = new System.Drawing.Point(237, 373);
-            this.registerEmailLineLabel.Name = "registerEmailLineLabel";
-            this.registerEmailLineLabel.Size = new System.Drawing.Size(410, 2);
-            this.registerEmailLineLabel.TabIndex = 17;
+            registerEmailLineLabel.BackColor = Color.Silver;
+            registerEmailLineLabel.Location = new Point(274, 443);
+            registerEmailLineLabel.Name = "registerEmailLineLabel";
+            registerEmailLineLabel.Size = new Size(410, 2);
+            registerEmailLineLabel.TabIndex = 17;
             // 
             // registerEmailTextBox
             // 
-            this.registerEmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.registerEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerEmailTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.registerEmailTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.registerEmailTextBox.Location = new System.Drawing.Point(237, 345);
-            this.registerEmailTextBox.Name = "registerEmailTextBox";
-            this.registerEmailTextBox.PlaceholderText = "Correo electrónico";
-            this.registerEmailTextBox.Size = new System.Drawing.Size(410, 24);
-            this.registerEmailTextBox.TabIndex = 16;
+            registerEmailTextBox.BackColor = Color.FromArgb(25, 42, 86);
+            registerEmailTextBox.BorderStyle = BorderStyle.None;
+            registerEmailTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registerEmailTextBox.ForeColor = Color.Silver;
+            registerEmailTextBox.Location = new Point(274, 415);
+            registerEmailTextBox.Name = "registerEmailTextBox";
+            registerEmailTextBox.PlaceholderText = "Correo electrónico";
+            registerEmailTextBox.Size = new Size(410, 24);
+            registerEmailTextBox.TabIndex = 16;
             // 
             // backRegisterButton
             // 
-            this.backRegisterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.backRegisterButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.backRegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backRegisterButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backRegisterButton.ForeColor = System.Drawing.Color.Silver;
-            this.backRegisterButton.Location = new System.Drawing.Point(8, 7);
-            this.backRegisterButton.Name = "backRegisterButton";
-            this.backRegisterButton.Size = new System.Drawing.Size(81, 30);
-            this.backRegisterButton.TabIndex = 21;
-            this.backRegisterButton.Text = "⬅️ Volver";
-            this.backRegisterButton.UseVisualStyleBackColor = true;
-            this.backRegisterButton.Click += new System.EventHandler(this.backRegisterButton_Click);
+            backRegisterButton.BackgroundImage = (Image)resources.GetObject("backRegisterButton.BackgroundImage");
+            backRegisterButton.BackgroundImageLayout = ImageLayout.Stretch;
+            backRegisterButton.FlatAppearance.BorderColor = Color.FromArgb(25, 42, 86);
+            backRegisterButton.FlatStyle = FlatStyle.Flat;
+            backRegisterButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            backRegisterButton.ForeColor = Color.Silver;
+            backRegisterButton.Location = new Point(12, 12);
+            backRegisterButton.Name = "backRegisterButton";
+            backRegisterButton.Size = new Size(47, 47);
+            backRegisterButton.TabIndex = 21;
+            backRegisterButton.UseVisualStyleBackColor = true;
+            backRegisterButton.Click += backRegisterButton_Click;
+            // 
+            // HidePasswordRegisterPictureBox
+            // 
+            HidePasswordRegisterPictureBox.Image = (Image)resources.GetObject("HidePasswordRegisterPictureBox.Image");
+            HidePasswordRegisterPictureBox.Location = new Point(648, 460);
+            HidePasswordRegisterPictureBox.Name = "HidePasswordRegisterPictureBox";
+            HidePasswordRegisterPictureBox.Size = new Size(37, 35);
+            HidePasswordRegisterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            HidePasswordRegisterPictureBox.TabIndex = 23;
+            HidePasswordRegisterPictureBox.TabStop = false;
+            HidePasswordRegisterPictureBox.Click += HidePasswordRegisterPictureBox_Click;
+            // 
+            // SeePasswordRegisterPictureBox
+            // 
+            SeePasswordRegisterPictureBox.Image = (Image)resources.GetObject("SeePasswordRegisterPictureBox.Image");
+            SeePasswordRegisterPictureBox.Location = new Point(648, 460);
+            SeePasswordRegisterPictureBox.Name = "SeePasswordRegisterPictureBox";
+            SeePasswordRegisterPictureBox.Size = new Size(37, 35);
+            SeePasswordRegisterPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            SeePasswordRegisterPictureBox.TabIndex = 24;
+            SeePasswordRegisterPictureBox.TabStop = false;
+            SeePasswordRegisterPictureBox.Click += SeePasswordRegisterPictureBox_Click;
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(914, 676);
-            this.Controls.Add(this.backRegisterButton);
-            this.Controls.Add(this.registerPasswordLineLabel);
-            this.Controls.Add(this.registerPasswordTextBox);
-            this.Controls.Add(this.registerEmailLineLabel);
-            this.Controls.Add(this.registerEmailTextBox);
-            this.Controls.Add(this.registerPhoneLineLabel);
-            this.Controls.Add(this.registerPhoneTextBox);
-            this.Controls.Add(this.registerLastNameLineLabel);
-            this.Controls.Add(this.registerLastNameTextBox);
-            this.Controls.Add(this.registerButton);
-            this.Controls.Add(this.registerNameLineLabel);
-            this.Controls.Add(this.registerNameTextBox);
-            this.Controls.Add(this.registerUserLineLabel);
-            this.Controls.Add(this.registerUserTextBox);
-            this.Controls.Add(this.registerLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RegisterForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RegisterForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(25, 42, 86);
+            ClientSize = new Size(914, 676);
+            Controls.Add(HidePasswordRegisterPictureBox);
+            Controls.Add(backRegisterButton);
+            Controls.Add(registerPasswordLineLabel);
+            Controls.Add(registerPasswordTextBox);
+            Controls.Add(registerEmailLineLabel);
+            Controls.Add(registerEmailTextBox);
+            Controls.Add(registerPhoneLineLabel);
+            Controls.Add(registerPhoneTextBox);
+            Controls.Add(registerLastNameLineLabel);
+            Controls.Add(registerLastNameTextBox);
+            Controls.Add(registerButton);
+            Controls.Add(registerNameLineLabel);
+            Controls.Add(registerNameTextBox);
+            Controls.Add(registerUserLineLabel);
+            Controls.Add(registerUserTextBox);
+            Controls.Add(registerLabel);
+            Controls.Add(SeePasswordRegisterPictureBox);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "RegisterForm";
+            ((System.ComponentModel.ISupportInitialize)HidePasswordRegisterPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)SeePasswordRegisterPictureBox).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -255,5 +285,7 @@
         private Label registerEmailLineLabel;
         private TextBox registerEmailTextBox;
         private Button backRegisterButton;
+        private PictureBox HidePasswordRegisterPictureBox;
+        private PictureBox SeePasswordRegisterPictureBox;
     }
 }

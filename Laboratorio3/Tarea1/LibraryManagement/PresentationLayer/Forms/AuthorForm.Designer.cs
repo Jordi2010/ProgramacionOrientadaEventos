@@ -56,9 +56,9 @@
             authorManagementLabel.ForeColor = Color.White;
             authorManagementLabel.Location = new Point(384, 9);
             authorManagementLabel.Name = "authorManagementLabel";
-            authorManagementLabel.Size = new Size(279, 25);
+            authorManagementLabel.Size = new Size(323, 25);
             authorManagementLabel.TabIndex = 1;
-            authorManagementLabel.Text = "Administración de autores";
+            authorManagementLabel.Text = "ADMINISTRACIÓN DE AUTORES";
             // 
             // authorDataGridView
             // 
@@ -207,6 +207,7 @@
             authorSearchTextBox.Name = "authorSearchTextBox";
             authorSearchTextBox.Size = new Size(664, 27);
             authorSearchTextBox.TabIndex = 12;
+            authorSearchTextBox.TextChanged += authorSearchTextBox_TextChanged_1;
             // 
             // authorSearchLabel
             // 

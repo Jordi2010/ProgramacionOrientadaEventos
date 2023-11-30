@@ -271,9 +271,9 @@
             returnManagementLabel.ForeColor = Color.White;
             returnManagementLabel.Location = new Point(384, 11);
             returnManagementLabel.Name = "returnManagementLabel";
-            returnManagementLabel.Size = new Size(340, 25);
+            returnManagementLabel.Size = new Size(392, 25);
             returnManagementLabel.TabIndex = 29;
-            returnManagementLabel.Text = "Administración de devoluciones";
+            returnManagementLabel.Text = "ADMINISTRACIÓN DE DEVOLUCIONES";
             // 
             // ReturnForm
             // 

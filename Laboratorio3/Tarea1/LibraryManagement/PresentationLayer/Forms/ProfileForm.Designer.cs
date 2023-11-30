@@ -377,9 +377,9 @@
             profileManagementLabel.ForeColor = Color.White;
             profileManagementLabel.Location = new Point(384, 11);
             profileManagementLabel.Name = "profileManagementLabel";
-            profileManagementLabel.Size = new Size(259, 25);
+            profileManagementLabel.Size = new Size(301, 25);
             profileManagementLabel.TabIndex = 29;
-            profileManagementLabel.Text = "Administración del perfil";
+            profileManagementLabel.Text = "ADMINISTRACIÓN DEL PERFIL";
             // 
             // ProfileForm
             // 

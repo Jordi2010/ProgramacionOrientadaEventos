@@ -72,6 +72,7 @@
             // 
             // minimizeDashboardButton
             // 
+            minimizeDashboardButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             minimizeDashboardButton.BackgroundImage = (Image)resources.GetObject("minimizeDashboardButton.BackgroundImage");
             minimizeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             minimizeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
@@ -81,9 +82,11 @@
             minimizeDashboardButton.Size = new Size(16, 15);
             minimizeDashboardButton.TabIndex = 7;
             minimizeDashboardButton.UseVisualStyleBackColor = true;
+            minimizeDashboardButton.Click += minimizeDashboardButton_Click;
             // 
             // sizeDashboardButton
             // 
+            sizeDashboardButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             sizeDashboardButton.BackgroundImage = (Image)resources.GetObject("sizeDashboardButton.BackgroundImage");
             sizeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             sizeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
@@ -93,9 +96,11 @@
             sizeDashboardButton.Size = new Size(16, 15);
             sizeDashboardButton.TabIndex = 6;
             sizeDashboardButton.UseVisualStyleBackColor = true;
+            sizeDashboardButton.Click += sizeDashboardButton_Click;
             // 
             // closeDashboardButton
             // 
+            closeDashboardButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             closeDashboardButton.BackgroundImage = (Image)resources.GetObject("closeDashboardButton.BackgroundImage");
             closeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             closeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
@@ -157,6 +162,7 @@
             logoutButton.Text = "🔙 Cerrar sesión";
             logoutButton.TextAlign = ContentAlignment.MiddleLeft;
             logoutButton.UseVisualStyleBackColor = false;
+            logoutButton.Click += logoutButton_Click;
             logoutButton.MouseEnter += logoutButton_MouseEnter;
             logoutButton.MouseLeave += logoutButton_MouseLeave;
             // 
@@ -274,6 +280,7 @@
             homeButton.Text = "🏠 Inicio";
             homeButton.TextAlign = ContentAlignment.MiddleLeft;
             homeButton.UseVisualStyleBackColor = false;
+            homeButton.Click += homeButton_Click;
             homeButton.MouseEnter += homeButton_MouseEnter;
             homeButton.MouseLeave += homeButton_MouseLeave;
             // 
@@ -426,9 +433,9 @@
             dashboardLabel.ForeColor = Color.White;
             dashboardLabel.Location = new Point(477, 12);
             dashboardLabel.Name = "dashboardLabel";
-            dashboardLabel.Size = new Size(67, 25);
+            dashboardLabel.Size = new Size(80, 25);
             dashboardLabel.TabIndex = 0;
-            dashboardLabel.Text = "Inicio";
+            dashboardLabel.Text = "INICIO";
             // 
             // DashboardForm
             // 

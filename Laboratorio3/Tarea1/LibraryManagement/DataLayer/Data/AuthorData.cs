@@ -43,6 +43,19 @@ namespace DataLayer.Data
             _sqlCommand.Parameters.Clear();
             _connection.CloseConnection();
         }
+        public DataTable SearchAuthor(string search)
+        {
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT * FROM autores WHERE nombre LIKE '%' + @search + '%' OR apellido LIKE '%' + @search + '%'";
+            _sqlCommand.CommandType = CommandType.Text;
+            _sqlCommand.Parameters.AddWithValue("@search", search);
+            _readerRows = _sqlCommand.ExecuteReader();
+            booksTable.Load(_readerRows);
+
+            _connection.CloseConnection();
+
+            return booksTable;
+        }
 
         public void UpdateAuthor(Author author)
         {
