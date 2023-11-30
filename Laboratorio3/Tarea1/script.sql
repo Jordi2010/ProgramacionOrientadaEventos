@@ -2,87 +2,9 @@ USE [master]
 GO
 DROP DATABASE IF EXISTS [Biblioteca]
 GO
-/****** Object:  Database [Biblioteca]    Script Date: martes 10:17:32 ******/
-CREATE DATABASE [Biblioteca]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'Biblioteca', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\Biblioteca.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'Biblioteca_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\Biblioteca_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT
-GO
-ALTER DATABASE [Biblioteca] SET COMPATIBILITY_LEVEL = 150
-GO
-IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
-begin
-EXEC [Biblioteca].[dbo].[sp_fulltext_database] @action = 'enable'
-end
-GO
-ALTER DATABASE [Biblioteca] SET ANSI_NULL_DEFAULT OFF 
-GO
-ALTER DATABASE [Biblioteca] SET ANSI_NULLS OFF 
-GO
-ALTER DATABASE [Biblioteca] SET ANSI_PADDING OFF 
-GO
-ALTER DATABASE [Biblioteca] SET ANSI_WARNINGS OFF 
-GO
-ALTER DATABASE [Biblioteca] SET ARITHABORT OFF 
-GO
-ALTER DATABASE [Biblioteca] SET AUTO_CLOSE ON 
-GO
-ALTER DATABASE [Biblioteca] SET AUTO_SHRINK OFF 
-GO
-ALTER DATABASE [Biblioteca] SET AUTO_UPDATE_STATISTICS ON 
-GO
-ALTER DATABASE [Biblioteca] SET CURSOR_CLOSE_ON_COMMIT OFF 
-GO
-ALTER DATABASE [Biblioteca] SET CURSOR_DEFAULT  GLOBAL 
-GO
-ALTER DATABASE [Biblioteca] SET CONCAT_NULL_YIELDS_NULL OFF 
-GO
-ALTER DATABASE [Biblioteca] SET NUMERIC_ROUNDABORT OFF 
-GO
-ALTER DATABASE [Biblioteca] SET QUOTED_IDENTIFIER OFF 
-GO
-ALTER DATABASE [Biblioteca] SET RECURSIVE_TRIGGERS OFF 
-GO
-ALTER DATABASE [Biblioteca] SET  ENABLE_BROKER 
-GO
-ALTER DATABASE [Biblioteca] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
-GO
-ALTER DATABASE [Biblioteca] SET DATE_CORRELATION_OPTIMIZATION OFF 
-GO
-ALTER DATABASE [Biblioteca] SET TRUSTWORTHY OFF 
-GO
-ALTER DATABASE [Biblioteca] SET ALLOW_SNAPSHOT_ISOLATION OFF 
-GO
-ALTER DATABASE [Biblioteca] SET PARAMETERIZATION SIMPLE 
-GO
-ALTER DATABASE [Biblioteca] SET READ_COMMITTED_SNAPSHOT OFF 
-GO
-ALTER DATABASE [Biblioteca] SET HONOR_BROKER_PRIORITY OFF 
-GO
-ALTER DATABASE [Biblioteca] SET RECOVERY SIMPLE 
-GO
-ALTER DATABASE [Biblioteca] SET  MULTI_USER 
-GO
-ALTER DATABASE [Biblioteca] SET PAGE_VERIFY CHECKSUM  
-GO
-ALTER DATABASE [Biblioteca] SET DB_CHAINING OFF 
-GO
-ALTER DATABASE [Biblioteca] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
-GO
-ALTER DATABASE [Biblioteca] SET TARGET_RECOVERY_TIME = 60 SECONDS 
-GO
-ALTER DATABASE [Biblioteca] SET DELAYED_DURABILITY = DISABLED 
-GO
-ALTER DATABASE [Biblioteca] SET ACCELERATED_DATABASE_RECOVERY = OFF  
-GO
-ALTER DATABASE [Biblioteca] SET QUERY_STORE = OFF
-GO
 USE [Biblioteca]
 GO
-/****** Object:  Table [dbo].[autores]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[autores]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -97,7 +19,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CodigosRecuperacion]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[CodigosRecuperacion]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -114,7 +36,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[devoluciones]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[devoluciones]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -130,7 +52,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[estadoLibro]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[estadoLibro]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -144,7 +66,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[estadoPrestamo]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[estadoPrestamo]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -158,7 +80,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[libros]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[libros]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -177,7 +99,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[prestamos]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[prestamos]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -196,7 +118,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[usuarios]    Script Date: martes 10:17:32 ******/
+/****** Object:  Table [dbo].[usuarios]    Script Date: jueves 0:15:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -270,7 +192,54 @@ REFERENCES [dbo].[usuarios] ([idUsuario])
 GO
 ALTER TABLE [dbo].[prestamos] CHECK CONSTRAINT [FK_Prestamos_Usuarios]
 GO
-USE [master]
+/****** Object:  StoredProcedure [dbo].[ActualizarContraseñaPorCodigo]    Script Date: jueves 0:15:31 ******/
+SET ANSI_NULLS ON
 GO
-ALTER DATABASE [Biblioteca] SET  READ_WRITE 
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[ActualizarContraseñaPorCodigo]
+    @codigo NVARCHAR(50),
+    @nuevaContraseña NVARCHAR(100)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        DECLARE @usuarioId INT;
+
+        -- Obtener el ID del usuario asociado al código
+        SELECT @usuarioId = idUsuario
+        FROM CodigosRecuperacion
+        WHERE Codigo = @codigo;
+
+        IF @usuarioId IS NOT NULL
+        BEGIN
+            -- Actualizar la contraseña del usuario
+            UPDATE usuarios
+            SET contraseña = @nuevaContraseña
+            WHERE idUsuario = @usuarioId;
+
+            -- Eliminar el código de restablecimiento utilizado
+            DELETE FROM CodigosRecuperacion
+            WHERE Codigo = @codigo;
+
+            COMMIT TRANSACTION;
+
+            SELECT 'Contraseña actualizada y código eliminado correctamente.' AS Resultado;
+        END
+        ELSE
+        BEGIN
+            SELECT 'Código no válido.' AS Resultado;
+        END
+
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+
+        SELECT ERROR_MESSAGE() AS Error;
+    END CATCH;
+END
 GO
