@@ -74,6 +74,7 @@
             returnSearchTextBox.Name = "returnSearchTextBox";
             returnSearchTextBox.Size = new Size(664, 27);
             returnSearchTextBox.TabIndex = 40;
+            returnSearchTextBox.TextChanged += returnSearchTextBox_TextChanged;
             // 
             // returnSearchLabel
             // 

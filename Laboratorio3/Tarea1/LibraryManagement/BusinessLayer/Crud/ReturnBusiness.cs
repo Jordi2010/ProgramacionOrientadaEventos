@@ -33,5 +33,11 @@ namespace BusinessLayer.Crud
         {
             returnData.DeleteReturn(Return);
         }
+        public DataTable SearchReturn(string search)
+        {
+            DataTable returnTable = new DataTable();
+            returnTable = returnData.SearchReturn(search);
+            return returnTable;
+        }
     }
 }

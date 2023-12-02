@@ -59,6 +59,19 @@ namespace DataLayer.Data
             _sqlCommand.Parameters.Clear();
             _connection.CloseConnection();
         }
+        public DataTable SearchReturn(string search)
+        {
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT devoluciones.idDevoluciones AS ID, prestamos.clientePrestamo AS Cliente, libros.nombreLibro AS Libro, devoluciones.fechaDevolucionReal AS [Fecha de devolución real] FROM devoluciones INNER JOIN prestamos ON devoluciones.idPrestamo = prestamos.idPrestamo INNER JOIN libros ON prestamos.idLibro = libros.idLibro WHERE prestamos.clientePrestamo LIKE '%' + @search + '%' OR libros.nombreLibro LIKE '%' + @search + '%'";
+            _sqlCommand.CommandType = CommandType.Text;
+            _sqlCommand.Parameters.AddWithValue("@search", search);
+            _readerRows = _sqlCommand.ExecuteReader();
+            booksTable.Load(_readerRows);
+
+            _connection.CloseConnection();
+
+            return booksTable;
+        }
 
         public void DeleteReturn(Return Return)
         {

@@ -39,22 +39,24 @@
             userManagementLabel = new Label();
             userInformationGroupBox = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)userDataGridView).BeginInit();
+            userInformationGroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // userSearchTextBox
             // 
             userSearchTextBox.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            userSearchTextBox.Location = new Point(51, 113);
+            userSearchTextBox.Location = new Point(68, 131);
             userSearchTextBox.Name = "userSearchTextBox";
-            userSearchTextBox.Size = new Size(986, 27);
+            userSearchTextBox.Size = new Size(953, 27);
             userSearchTextBox.TabIndex = 33;
+            userSearchTextBox.TextChanged += userSearchTextBox_TextChanged;
             // 
             // userSearchLabel
             // 
             userSearchLabel.AutoSize = true;
             userSearchLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             userSearchLabel.ForeColor = Color.White;
-            userSearchLabel.Location = new Point(54, 84);
+            userSearchLabel.Location = new Point(180, 98);
             userSearchLabel.Name = "userSearchLabel";
             userSearchLabel.Size = new Size(128, 21);
             userSearchLabel.TabIndex = 32;
@@ -67,9 +69,9 @@
             pdfUserButton.FlatStyle = FlatStyle.Flat;
             pdfUserButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             pdfUserButton.ForeColor = Color.White;
-            pdfUserButton.Location = new Point(576, 585);
+            pdfUserButton.Location = new Point(513, 507);
             pdfUserButton.Name = "pdfUserButton";
-            pdfUserButton.Size = new Size(110, 31);
+            pdfUserButton.Size = new Size(90, 32);
             pdfUserButton.TabIndex = 31;
             pdfUserButton.Text = "PDF";
             pdfUserButton.UseVisualStyleBackColor = false;
@@ -81,12 +83,13 @@
             deleteUserButton.FlatStyle = FlatStyle.Flat;
             deleteUserButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             deleteUserButton.ForeColor = Color.White;
-            deleteUserButton.Location = new Point(380, 585);
+            deleteUserButton.Location = new Point(269, 507);
             deleteUserButton.Name = "deleteUserButton";
-            deleteUserButton.Size = new Size(110, 31);
+            deleteUserButton.Size = new Size(90, 32);
             deleteUserButton.TabIndex = 30;
             deleteUserButton.Text = "Eliminar";
             deleteUserButton.UseVisualStyleBackColor = false;
+            deleteUserButton.Click += deleteUserButton_Click;
             // 
             // userDataGridView
             // 
@@ -105,7 +108,7 @@
             userDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             userDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             userDataGridView.EnableHeadersVisualStyles = false;
-            userDataGridView.Location = new Point(51, 151);
+            userDataGridView.Location = new Point(68, 169);
             userDataGridView.Name = "userDataGridView";
             userDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -124,7 +127,7 @@
             userDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             userDataGridView.RowTemplate.Height = 25;
             userDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            userDataGridView.Size = new Size(986, 387);
+            userDataGridView.Size = new Size(953, 352);
             userDataGridView.TabIndex = 29;
             // 
             // userManagementLabel
@@ -132,7 +135,7 @@
             userManagementLabel.AutoSize = true;
             userManagementLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             userManagementLabel.ForeColor = Color.White;
-            userManagementLabel.Location = new Point(407, 15);
+            userManagementLabel.Location = new Point(403, 19);
             userManagementLabel.Name = "userManagementLabel";
             userManagementLabel.Size = new Size(334, 25);
             userManagementLabel.TabIndex = 28;
@@ -140,11 +143,13 @@
             // 
             // userInformationGroupBox
             // 
+            userInformationGroupBox.Controls.Add(deleteUserButton);
+            userInformationGroupBox.Controls.Add(pdfUserButton);
             userInformationGroupBox.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             userInformationGroupBox.ForeColor = Color.White;
-            userInformationGroupBox.Location = new Point(12, 51);
+            userInformationGroupBox.Location = new Point(29, 69);
             userInformationGroupBox.Name = "userInformationGroupBox";
-            userInformationGroupBox.Size = new Size(1060, 615);
+            userInformationGroupBox.Size = new Size(1027, 580);
             userInformationGroupBox.TabIndex = 34;
             userInformationGroupBox.TabStop = false;
             userInformationGroupBox.Text = "Información de usuarios";
@@ -157,8 +162,6 @@
             ClientSize = new Size(1084, 676);
             Controls.Add(userSearchTextBox);
             Controls.Add(userSearchLabel);
-            Controls.Add(pdfUserButton);
-            Controls.Add(deleteUserButton);
             Controls.Add(userDataGridView);
             Controls.Add(userManagementLabel);
             Controls.Add(userInformationGroupBox);
@@ -166,6 +169,7 @@
             Name = "UserForm";
             Text = "UserForm";
             ((System.ComponentModel.ISupportInitialize)userDataGridView).EndInit();
+            userInformationGroupBox.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }

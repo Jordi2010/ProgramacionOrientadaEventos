@@ -74,6 +74,7 @@
             loanSearchTextBox.Name = "loanSearchTextBox";
             loanSearchTextBox.Size = new Size(664, 27);
             loanSearchTextBox.TabIndex = 40;
+            loanSearchTextBox.TextChanged += loanSearchTextBox_TextChanged;
             // 
             // loanSearchLabel
             // 

@@ -18,7 +18,10 @@ namespace PresentationLayer.Validations
                .NotEmpty().WithMessage("No hay libros disponibles o no ha escogido ninguno.");
 
             RuleFor(loan => loan.Customer)
-               .NotEmpty().WithMessage("No puede dejar campo vacío, por favor completar el nombre del cliente.");
+            .NotEmpty().WithMessage("No puede dejar campo vacío, por favor completar el nombre del cliente.")
+            .MinimumLength(3).WithMessage("El nombre del cliente debe tener al menos tres caracteres.")
+            .Matches("^[a-zA-Z ]+$").WithMessage("El nombre del cliente solo puede contener letras.");
+
 
             RuleFor(loan => loan.LoanDate)
                 .NotEmpty().WithMessage("Por favor, ingrese una fecha.")

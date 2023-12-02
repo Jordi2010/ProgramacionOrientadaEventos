@@ -155,5 +155,11 @@ namespace PresentationLayer.Forms
                 MessageBox.Show("Debe seleccionar una fila antes de eliminar");
             }
         }
+
+        private void loanSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            LoanBusiness loanBusiness = new LoanBusiness();
+            loanDataGridView.DataSource = loanBusiness.SearchLoan(loanSearchTextBox.Text);
+        }
     }
 }

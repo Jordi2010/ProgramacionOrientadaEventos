@@ -53,5 +53,11 @@ namespace BusinessLayer.Crud
         {
             loanData.DeleteLoan(loan);
         }
+        public DataTable SearchLoan(string search)
+        {
+            DataTable loanTable = new DataTable();
+            loanTable = loanData.SearchLoan(search);
+            return loanTable;
+        }
     }
 }

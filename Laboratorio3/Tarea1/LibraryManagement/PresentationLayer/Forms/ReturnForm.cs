@@ -193,5 +193,11 @@ namespace PresentationLayer.Forms
                 MessageBox.Show("Debe seleccionar una fila antes de eliminar");
             }
         }
+
+        private void returnSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            ReturnBusiness returnBusiness = new ReturnBusiness();
+            returnDataGridView.DataSource = returnBusiness.SearchReturn(returnSearchTextBox.Text);
+        }
     }
 }

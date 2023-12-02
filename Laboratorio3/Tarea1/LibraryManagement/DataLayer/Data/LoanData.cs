@@ -137,5 +137,19 @@ namespace DataLayer.Data
                 _connection.CloseConnection();
             }
         }
+        public DataTable SearchLoan(string search)
+        {
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT prestamos.idPrestamo AS ID, libros.nombreLibro AS Libro, prestamos.clientePrestamo AS Cliente, estadoPrestamo.estadoPrestamo AS Estado, prestamos.fechaPrestamo AS [Fecha de préstamo], prestamos.fechaDevolucionEstimada AS [Fecha de devolución] FROM prestamos INNER JOIN estadoPrestamo ON prestamos.idestadoPrestamo = estadoPrestamo.idestadoPrestamo INNER JOIN libros ON prestamos.idLibro = libros.idLibro WHERE prestamos.clientePrestamo LIKE '%' + @search + '%' OR libros.nombreLibro LIKE '%' + @search + '%'";
+            _sqlCommand.CommandType = CommandType.Text;
+            _sqlCommand.Parameters.AddWithValue("@search", search);
+            _readerRows = _sqlCommand.ExecuteReader();
+            booksTable.Load(_readerRows);
+
+            _connection.CloseConnection();
+
+            return booksTable;
+        }
+
     }
 }
