@@ -243,3 +243,19 @@ BEGIN
     END CATCH;
 END
 GO
+--Insertando datos a estado libros
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('Disponible');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('Prestado');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('En reparación');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('Perdido');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('En espera');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('En revisión');
+INSERT INTO [dbo].[estadoLibro] ([estadoLibro]) VALUES ('Reservado');
+GO
+--Insertar estados de préstamo
+INSERT INTO [dbo].[estadoPrestamo] ([estadoPrestamo]) VALUES ('En curso');
+INSERT INTO [dbo].[estadoPrestamo] ([estadoPrestamo]) VALUES ('Pendiente');
+INSERT INTO [dbo].[estadoPrestamo] ([estadoPrestamo]) VALUES ('Finalizado');
+INSERT INTO [dbo].[estadoPrestamo] ([estadoPrestamo]) VALUES ('Vencido');
+INSERT INTO [dbo].[estadoPrestamo] ([estadoPrestamo]) VALUES ('Cancelado');
+GO
