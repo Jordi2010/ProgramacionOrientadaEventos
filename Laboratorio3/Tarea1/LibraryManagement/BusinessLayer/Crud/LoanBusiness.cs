@@ -59,5 +59,12 @@ namespace BusinessLayer.Crud
             loanTable = loanData.SearchLoan(search);
             return loanTable;
         }
+
+        //cambios para que la fecha de entrega no sea menor a la fecha de prestamo 
+        public DateTime GetLoanDateById(int idLoan)
+        {
+            return loanData.GetLoanDateById(idLoan);
+        }
+
     }
 }

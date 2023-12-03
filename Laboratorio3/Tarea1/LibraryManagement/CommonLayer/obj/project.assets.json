@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\berna\\.nuget\\packages\\": {}
+    "C:\\Users\\Alessandro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Descargas\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+      "projectUniqueName": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
       "projectName": "CommonLayer",
-      "projectPath": "D:\\Descargas\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
-      "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
-      "outputPath": "D:\\Descargas\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
+      "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+      "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
+      "outputPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

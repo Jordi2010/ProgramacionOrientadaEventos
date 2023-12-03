@@ -51,7 +51,10 @@ namespace DataLayer.Data
         {
             DataTable bookFilterTable = new DataTable();
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT * FROM libros where idestadoLibro = 1";
+            _sqlCommand.CommandText = "SELECT libros.idLibro, libros.nombreLibro, autores.nombre, autores.apellido " +
+                          "FROM libros " +
+                          "INNER JOIN autores ON libros.idAutor = autores.idAutor " +
+                          "WHERE libros.idestadoLibro = 1";
             _sqlCommand.CommandType = CommandType.Text;
             _readerRows = _sqlCommand.ExecuteReader();
             bookFilterTable.Load(_readerRows);

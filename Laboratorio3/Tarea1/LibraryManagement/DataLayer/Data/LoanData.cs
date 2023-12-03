@@ -57,7 +57,14 @@ namespace DataLayer.Data
         public DataTable GetFilterLoan()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "select prestamos.idPrestamo, libros.nombreLibro, prestamos.clientePrestamo,estadoPrestamo.estadoPrestamo, prestamos.fechaDevolucionEstimada, prestamos.fechaPrestamo, prestamos.idLibro, prestamos.idestadoPrestamo from prestamos inner join estadoPrestamo on prestamos.idestadoPrestamo = estadoPrestamo.idestadoPrestamo inner join libros on prestamos.idLibro = libros.idLibro where prestamos.idestadoPrestamo = 2";
+            _sqlCommand.CommandText = "SELECT prestamos.idPrestamo, libros.nombreLibro + ' - ' + autores.nombre + ' ' + autores.apellido AS LibroCompleto, " +
+                          "prestamos.clientePrestamo, estadoPrestamo.estadoPrestamo, " +
+                          "prestamos.fechaDevolucionEstimada, prestamos.fechaPrestamo, prestamos.idLibro, prestamos.idestadoPrestamo " +
+                          "FROM prestamos " +
+                          "INNER JOIN estadoPrestamo ON prestamos.idestadoPrestamo = estadoPrestamo.idestadoPrestamo " +
+                          "INNER JOIN libros ON prestamos.idLibro = libros.idLibro " +
+                          "INNER JOIN autores ON libros.idAutor = autores.idAutor " +
+                          "WHERE prestamos.idestadoPrestamo = 2";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();
@@ -107,6 +114,8 @@ namespace DataLayer.Data
             _sqlCommand.CommandText = "update prestamos set idestadoPrestamo = @IdLoanStatus where idPrestamo = @IdLoan";
             _sqlCommand.CommandType = CommandType.Text;
 
+            // Limpiar los parámetros antes de agregar nuevos
+            _sqlCommand.Parameters.Clear();
             _sqlCommand.Parameters.AddWithValue("@IdLoanStatus", loan.IdLoanStatus);
             _sqlCommand.Parameters.AddWithValue("@IdLoan", loan.IdLoan);
 
@@ -150,6 +159,30 @@ namespace DataLayer.Data
 
             return booksTable;
         }
+        //cambios para que la fecha de entrega no sea menor a la fecha de prestamo 
+        public DateTime GetLoanDateById(int idLoan)
+        {
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT fechaPrestamo FROM prestamos WHERE idPrestamo = @IdLoan";
+            _sqlCommand.CommandType = CommandType.Text;
+
+            _sqlCommand.Parameters.AddWithValue("@IdLoan", idLoan);
+
+            _readerRows = _sqlCommand.ExecuteReader();
+
+            DateTime loanDate = DateTime.MinValue;
+
+            if (_readerRows.Read())
+            {
+                loanDate = _readerRows.GetDateTime(0);
+            }
+
+            _readerRows.Close();
+            _connection.CloseConnection();
+
+            return loanDate;
+        }
+
 
     }
 }

@@ -101,8 +101,8 @@ namespace PresentationLayer.Forms
         {
             LoanStatusBusiness loanStatusBusiness = new LoanStatusBusiness();
             returnLoanStatusComboBox.DataSource = loanStatusBusiness.GetAllLoanStatus();
-            returnLoanStatusComboBox.DisplayMember = "estadoPrestamo";
-            returnLoanStatusComboBox.ValueMember = "idestadoPrestamo";
+            returnBookComboBox.DisplayMember = "LibroCompleto";
+            returnBookComboBox.ValueMember = "idPrestamo";
         }
 
         private void returnBookComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,8 +142,12 @@ namespace PresentationLayer.Forms
             LoanBusiness loanBussines = new LoanBusiness();
             Loan loan = new Loan();
 
+
             Return.IdLoan = Convert.ToInt32(returnBookComboBox.SelectedValue);
             Return.ActualReturnDate = returnDateDateTimePicker.Value;
+
+            // Agregado: Obtén la fecha de préstamo
+            DateTime fechaPrestamo = loanBussines.GetLoanDateById(Return.IdLoan);
 
             ReturnValidator returnvalidator = new ReturnValidator();
             ValidationResult returnResults = returnvalidator.Validate(Return);
@@ -152,25 +156,34 @@ namespace PresentationLayer.Forms
             {
                 foreach (var failure in returnResults.Errors)
                 {
-                    MessageBox.Show("La propiedad " + failure.PropertyName + " no pasó la validación. El error fué el siguiente: " + failure.ErrorMessage);
+                    MessageBox.Show("La propiedad " + failure.PropertyName + " no pasó la validación. El error fue el siguiente: " + failure.ErrorMessage);
                 }
             }
             else
             {
-                if (isEditMode)
+                // Agregado: Validar que la fecha de devolución real sea mayor o igual a la fecha de préstamo
+                if (Return.ActualReturnDate < fechaPrestamo)
                 {
-                    Return.IdReturn = int.Parse(returnDataGridView.CurrentRow.Cells["idDevoluciones"].Value.ToString());
-                    returnBusiness.UpdateReturn(Return);
-                    isEditMode = false;
+                    MessageBox.Show("La fecha de devolución real no puede ser menor a la fecha de préstamo.");
                 }
                 else
                 {
-                    loan.IdLoan = Convert.ToInt32(returnBookComboBox.SelectedValue);
-                    loan.IdLoanStatus = Convert.ToInt32(returnLoanStatusComboBox.SelectedValue);
-                    loanBussines.UpdateStatusLoan(loan);
-                    returnBusiness.AddReturn(Return);
+                    if (isEditMode)
+                    {
+                        Return.IdReturn = int.Parse(returnDataGridView.CurrentRow.Cells["idDevoluciones"].Value.ToString());
+                        returnBusiness.UpdateReturn(Return);
+                        isEditMode = false;
+                    }
+                    else
+                    {
+                        loan.IdLoan = Convert.ToInt32(returnBookComboBox.SelectedValue);
+                        loan.IdLoanStatus = Convert.ToInt32(returnLoanStatusComboBox.SelectedValue);
+                        loanBussines.UpdateStatusLoan(loan);
+                        returnBusiness.AddReturn(Return);
+                    }
                 }
             }
+
             LoadAllData();
         }
 

@@ -45,10 +45,24 @@ namespace PresentationLayer.Forms
 
         private void LoadBookComboBoxData()
         {
-            BookBusiness bookBussines = new BookBusiness();
-            loanBookComboBox.DataSource = bookBussines.GetBookFilter();
-            loanBookComboBox.DisplayMember = "nombreLibro";
-            loanBookComboBox.ValueMember = "idLibro";
+            BookBusiness bookBusiness = new BookBusiness();
+            DataTable bookDataTable = bookBusiness.GetBookFilter();
+
+            // Verifica si hay libros en la tabla
+            if (bookDataTable.Rows.Count > 0)
+            {
+                // Concatena el nombre del libro y el nombre del autor en una columna nueva
+                bookDataTable.Columns.Add("LibroCompleto", typeof(string), "nombreLibro + ' - ' + nombre + ' ' + apellido");
+
+                loanBookComboBox.DataSource = bookDataTable;
+                loanBookComboBox.DisplayMember = "LibroCompleto";
+                loanBookComboBox.ValueMember = "idLibro";
+            }
+            else
+            {
+                // Si no hay libros, muestra un mensaje predeterminado
+                MessageBox.Show("No hay libros disponibles.");
+            }
         }
 
         private void saveLoanButton_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace DataLayer.Data
 {
     public class Connection
     {
-        private SqlConnection _connection = new SqlConnection(@"Data Source=BERNARDOCAMPOS;Initial Catalog=Biblioteca;Integrated Security=True");
+        private SqlConnection _connection = new SqlConnection(@"Data Source=(LOCAL);Initial Catalog=Biblioteca;Integrated Security=True");
 
         public SqlConnection OpenConnection()
         {
