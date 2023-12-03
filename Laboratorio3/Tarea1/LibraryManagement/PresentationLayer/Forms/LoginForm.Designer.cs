@@ -305,6 +305,7 @@
             Controls.Add(loginSideBarPanel);
             Controls.Add(loginTopBarPanel);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;

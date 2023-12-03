@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj": {}
+    "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\obj\\",
+        "outputPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
-                "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
+              "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
+                "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
               },
-              "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj"
+              "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
+    "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+        "projectUniqueName": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
         "projectName": "CommonLayer",
-        "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+        "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
+        "outputPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,14 +121,14 @@
         }
       }
     },
-    "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj": {
+    "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj",
+        "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\obj\\",
+        "outputPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -145,8 +145,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
-                "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
+              "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
+                "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj": {
+    "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj",
+        "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\PresentationLayer.csproj",
         "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\obj\\",
+        "outputPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
-                "projectPath": "D:\\Ciclo_II_2023\\UNIVO\\Biblioteca Buena\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
+              "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj": {
+                "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj"
               }
             }
           }

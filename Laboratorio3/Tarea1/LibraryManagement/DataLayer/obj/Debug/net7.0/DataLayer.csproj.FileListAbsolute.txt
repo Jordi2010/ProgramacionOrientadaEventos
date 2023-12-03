@@ -43,3 +43,18 @@ D:\Descargas\ProgramacionOrientadaEventos\Laboratorio3\Tarea1\LibraryManagement\
 D:\Descargas\ProgramacionOrientadaEventos\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\refint\DataLayer.dll
 D:\Descargas\ProgramacionOrientadaEventos\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.pdb
 D:\Descargas\ProgramacionOrientadaEventos\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\ref\DataLayer.dll
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\bin\Debug\net7.0\DataLayer.deps.json
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\bin\Debug\net7.0\DataLayer.dll
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\bin\Debug\net7.0\DataLayer.pdb
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\bin\Debug\net7.0\CommonLayer.dll
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\bin\Debug\net7.0\CommonLayer.pdb
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.csproj.AssemblyReference.cache
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.AssemblyInfoInputs.cache
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.AssemblyInfo.cs
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.csproj.CopyComplete
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.dll
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\refint\DataLayer.dll
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\DataLayer.pdb
+D:\Ciclo_II_2023\Biblioteca segunda\Laboratorio3\Tarea1\LibraryManagement\DataLayer\obj\Debug\net7.0\ref\DataLayer.dll
