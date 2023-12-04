@@ -97,6 +97,24 @@ namespace DataLayer.Data
             _sqlCommand.Parameters.Clear();
             _connection.CloseConnection();
         }
+        public void UpdateUser(int userId, string newUsername, string newName, string newLastName, string newPhoneNumber, string newEmail)
+        {
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "UPDATE usuarios SET usuario = @newUsername, nombre = @newName, apellido = @newLastName, telefono = @newPhoneNumber, correo = @newEmail WHERE idUsuario = @userId";
+            _sqlCommand.CommandType = CommandType.Text;
+
+            _sqlCommand.Parameters.AddWithValue("@userId", userId);
+            _sqlCommand.Parameters.AddWithValue("@newUsername", newUsername);
+            _sqlCommand.Parameters.AddWithValue("@newName", newName);
+            _sqlCommand.Parameters.AddWithValue("@newLastName", newLastName);
+            _sqlCommand.Parameters.AddWithValue("@newPhoneNumber", newPhoneNumber);
+            _sqlCommand.Parameters.AddWithValue("@newEmail", newEmail);
+
+            _sqlCommand.ExecuteNonQuery();
+
+            _sqlCommand.Parameters.Clear();
+            _connection.CloseConnection();
+        }
 
         public void AddUser(Author author)
         {

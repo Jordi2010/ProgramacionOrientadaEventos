@@ -66,9 +66,8 @@
             dashboardTopBarPanel.Controls.Add(closeDashboardButton);
             dashboardTopBarPanel.Dock = DockStyle.Top;
             dashboardTopBarPanel.Location = new Point(0, 0);
-            dashboardTopBarPanel.Margin = new Padding(3, 4, 3, 4);
             dashboardTopBarPanel.Name = "dashboardTopBarPanel";
-            dashboardTopBarPanel.Size = new Size(1467, 47);
+            dashboardTopBarPanel.Size = new Size(1284, 35);
             dashboardTopBarPanel.TabIndex = 0;
             // 
             // minimizeDashboardButton
@@ -78,10 +77,9 @@
             minimizeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             minimizeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             minimizeDashboardButton.FlatStyle = FlatStyle.Flat;
-            minimizeDashboardButton.Location = new Point(1374, 13);
-            minimizeDashboardButton.Margin = new Padding(3, 4, 3, 4);
+            minimizeDashboardButton.Location = new Point(1202, 10);
             minimizeDashboardButton.Name = "minimizeDashboardButton";
-            minimizeDashboardButton.Size = new Size(18, 20);
+            minimizeDashboardButton.Size = new Size(16, 15);
             minimizeDashboardButton.TabIndex = 7;
             minimizeDashboardButton.UseVisualStyleBackColor = true;
             minimizeDashboardButton.Click += minimizeDashboardButton_Click;
@@ -93,10 +91,9 @@
             sizeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             sizeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             sizeDashboardButton.FlatStyle = FlatStyle.Flat;
-            sizeDashboardButton.Location = new Point(1407, 13);
-            sizeDashboardButton.Margin = new Padding(3, 4, 3, 4);
+            sizeDashboardButton.Location = new Point(1231, 10);
             sizeDashboardButton.Name = "sizeDashboardButton";
-            sizeDashboardButton.Size = new Size(18, 20);
+            sizeDashboardButton.Size = new Size(16, 15);
             sizeDashboardButton.TabIndex = 6;
             sizeDashboardButton.UseVisualStyleBackColor = true;
             sizeDashboardButton.Click += sizeDashboardButton_Click;
@@ -108,10 +105,9 @@
             closeDashboardButton.BackgroundImageLayout = ImageLayout.Stretch;
             closeDashboardButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             closeDashboardButton.FlatStyle = FlatStyle.Flat;
-            closeDashboardButton.Location = new Point(1438, 13);
-            closeDashboardButton.Margin = new Padding(3, 4, 3, 4);
+            closeDashboardButton.Location = new Point(1258, 10);
             closeDashboardButton.Name = "closeDashboardButton";
-            closeDashboardButton.Size = new Size(18, 20);
+            closeDashboardButton.Size = new Size(16, 15);
             closeDashboardButton.TabIndex = 5;
             closeDashboardButton.UseVisualStyleBackColor = true;
             closeDashboardButton.Click += closeDashboardButton_Click;
@@ -129,10 +125,9 @@
             dashboardSideBarPanel.Controls.Add(authorButton);
             dashboardSideBarPanel.Controls.Add(homeButton);
             dashboardSideBarPanel.Dock = DockStyle.Left;
-            dashboardSideBarPanel.Location = new Point(0, 47);
-            dashboardSideBarPanel.Margin = new Padding(3, 4, 3, 4);
+            dashboardSideBarPanel.Location = new Point(0, 35);
             dashboardSideBarPanel.Name = "dashboardSideBarPanel";
-            dashboardSideBarPanel.Size = new Size(229, 901);
+            dashboardSideBarPanel.Size = new Size(200, 676);
             dashboardSideBarPanel.TabIndex = 1;
             // 
             // profileButton
@@ -142,10 +137,9 @@
             profileButton.FlatStyle = FlatStyle.Flat;
             profileButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             profileButton.ForeColor = Color.White;
-            profileButton.Location = new Point(0, 484);
-            profileButton.Margin = new Padding(3, 4, 3, 4);
+            profileButton.Location = new Point(0, 363);
             profileButton.Name = "profileButton";
-            profileButton.Size = new Size(229, 48);
+            profileButton.Size = new Size(200, 36);
             profileButton.TabIndex = 8;
             profileButton.Text = "👨‍💻 Perfil";
             profileButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -161,10 +155,9 @@
             logoutButton.FlatStyle = FlatStyle.Flat;
             logoutButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             logoutButton.ForeColor = Color.White;
-            logoutButton.Location = new Point(0, 532);
-            logoutButton.Margin = new Padding(3, 4, 3, 4);
+            logoutButton.Location = new Point(0, 399);
             logoutButton.Name = "logoutButton";
-            logoutButton.Size = new Size(229, 48);
+            logoutButton.Size = new Size(200, 36);
             logoutButton.TabIndex = 6;
             logoutButton.Text = "🔙 Cerrar sesión";
             logoutButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -180,10 +173,9 @@
             userButton.FlatStyle = FlatStyle.Flat;
             userButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             userButton.ForeColor = Color.White;
-            userButton.Location = new Point(0, 436);
-            userButton.Margin = new Padding(3, 4, 3, 4);
+            userButton.Location = new Point(0, 327);
             userButton.Name = "userButton";
-            userButton.Size = new Size(229, 48);
+            userButton.Size = new Size(200, 36);
             userButton.TabIndex = 7;
             userButton.Text = "\U0001f9d1‍👨 ‍Usuarios";
             userButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -195,10 +187,9 @@
             // dashboardLogoPictureBox
             // 
             dashboardLogoPictureBox.Image = (Image)resources.GetObject("dashboardLogoPictureBox.Image");
-            dashboardLogoPictureBox.Location = new Point(0, 33);
-            dashboardLogoPictureBox.Margin = new Padding(3, 4, 3, 4);
+            dashboardLogoPictureBox.Location = new Point(0, 25);
             dashboardLogoPictureBox.Name = "dashboardLogoPictureBox";
-            dashboardLogoPictureBox.Size = new Size(229, 128);
+            dashboardLogoPictureBox.Size = new Size(200, 96);
             dashboardLogoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             dashboardLogoPictureBox.TabIndex = 5;
             dashboardLogoPictureBox.TabStop = false;
@@ -210,10 +201,9 @@
             returnButton.FlatStyle = FlatStyle.Flat;
             returnButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             returnButton.ForeColor = Color.White;
-            returnButton.Location = new Point(0, 388);
-            returnButton.Margin = new Padding(3, 4, 3, 4);
+            returnButton.Location = new Point(0, 291);
             returnButton.Name = "returnButton";
-            returnButton.Size = new Size(229, 48);
+            returnButton.Size = new Size(200, 36);
             returnButton.TabIndex = 4;
             returnButton.Text = "↩️ Devoluciones";
             returnButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -229,10 +219,9 @@
             loanButton.FlatStyle = FlatStyle.Flat;
             loanButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             loanButton.ForeColor = Color.White;
-            loanButton.Location = new Point(0, 340);
-            loanButton.Margin = new Padding(3, 4, 3, 4);
+            loanButton.Location = new Point(0, 255);
             loanButton.Name = "loanButton";
-            loanButton.Size = new Size(229, 48);
+            loanButton.Size = new Size(200, 36);
             loanButton.TabIndex = 3;
             loanButton.Text = "📄 Préstamos";
             loanButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -248,10 +237,9 @@
             bookButton.FlatStyle = FlatStyle.Flat;
             bookButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             bookButton.ForeColor = Color.White;
-            bookButton.Location = new Point(0, 292);
-            bookButton.Margin = new Padding(3, 4, 3, 4);
+            bookButton.Location = new Point(0, 219);
             bookButton.Name = "bookButton";
-            bookButton.Size = new Size(229, 48);
+            bookButton.Size = new Size(200, 36);
             bookButton.TabIndex = 2;
             bookButton.Text = "📚 Libros";
             bookButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -267,10 +255,9 @@
             authorButton.FlatStyle = FlatStyle.Flat;
             authorButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             authorButton.ForeColor = Color.Transparent;
-            authorButton.Location = new Point(0, 244);
-            authorButton.Margin = new Padding(3, 4, 3, 4);
+            authorButton.Location = new Point(0, 183);
             authorButton.Name = "authorButton";
-            authorButton.Size = new Size(229, 48);
+            authorButton.Size = new Size(200, 36);
             authorButton.TabIndex = 1;
             authorButton.Text = "👨‍💼 Autores";
             authorButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -286,10 +273,9 @@
             homeButton.FlatStyle = FlatStyle.Flat;
             homeButton.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             homeButton.ForeColor = Color.White;
-            homeButton.Location = new Point(0, 196);
-            homeButton.Margin = new Padding(3, 4, 3, 4);
+            homeButton.Location = new Point(0, 147);
             homeButton.Name = "homeButton";
-            homeButton.Size = new Size(229, 48);
+            homeButton.Size = new Size(200, 36);
             homeButton.TabIndex = 0;
             homeButton.Text = "🏠 Inicio";
             homeButton.TextAlign = ContentAlignment.MiddleLeft;
@@ -310,10 +296,9 @@
             dashboardContentPanel.Controls.Add(dashboardWelcomeLabel);
             dashboardContentPanel.Controls.Add(dashboardLabel);
             dashboardContentPanel.Dock = DockStyle.Fill;
-            dashboardContentPanel.Location = new Point(229, 47);
-            dashboardContentPanel.Margin = new Padding(3, 4, 3, 4);
+            dashboardContentPanel.Location = new Point(200, 35);
             dashboardContentPanel.Name = "dashboardContentPanel";
-            dashboardContentPanel.Size = new Size(1238, 901);
+            dashboardContentPanel.Size = new Size(1084, 676);
             dashboardContentPanel.TabIndex = 2;
             // 
             // profileIconButton
@@ -325,10 +310,9 @@
             profileIconButton.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             profileIconButton.IconColor = Color.White;
             profileIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            profileIconButton.Location = new Point(846, 364);
-            profileIconButton.Margin = new Padding(3, 4, 3, 4);
+            profileIconButton.Location = new Point(740, 273);
             profileIconButton.Name = "profileIconButton";
-            profileIconButton.Size = new Size(338, 191);
+            profileIconButton.Size = new Size(296, 143);
             profileIconButton.TabIndex = 11;
             profileIconButton.Text = "Perfil";
             profileIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -345,10 +329,9 @@
             userIconButton.IconChar = FontAwesome.Sharp.IconChar.Users;
             userIconButton.IconColor = Color.White;
             userIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            userIconButton.Location = new Point(448, 364);
-            userIconButton.Margin = new Padding(3, 4, 3, 4);
+            userIconButton.Location = new Point(392, 273);
             userIconButton.Name = "userIconButton";
-            userIconButton.Size = new Size(338, 191);
+            userIconButton.Size = new Size(296, 143);
             userIconButton.TabIndex = 10;
             userIconButton.Text = "Usuarios";
             userIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -365,10 +348,9 @@
             returnIconButton.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
             returnIconButton.IconColor = Color.White;
             returnIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            returnIconButton.Location = new Point(49, 364);
-            returnIconButton.Margin = new Padding(3, 4, 3, 4);
+            returnIconButton.Location = new Point(43, 273);
             returnIconButton.Name = "returnIconButton";
-            returnIconButton.Size = new Size(338, 191);
+            returnIconButton.Size = new Size(296, 143);
             returnIconButton.TabIndex = 9;
             returnIconButton.Text = "Devoluciones";
             returnIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -385,10 +367,9 @@
             loanIconButton.IconChar = FontAwesome.Sharp.IconChar.FileText;
             loanIconButton.IconColor = Color.White;
             loanIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            loanIconButton.Location = new Point(846, 128);
-            loanIconButton.Margin = new Padding(3, 4, 3, 4);
+            loanIconButton.Location = new Point(740, 96);
             loanIconButton.Name = "loanIconButton";
-            loanIconButton.Size = new Size(338, 191);
+            loanIconButton.Size = new Size(296, 143);
             loanIconButton.TabIndex = 8;
             loanIconButton.Text = "Préstamos";
             loanIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -405,10 +386,9 @@
             bookIconButton.IconChar = FontAwesome.Sharp.IconChar.Book;
             bookIconButton.IconColor = Color.White;
             bookIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            bookIconButton.Location = new Point(448, 128);
-            bookIconButton.Margin = new Padding(3, 4, 3, 4);
+            bookIconButton.Location = new Point(392, 96);
             bookIconButton.Name = "bookIconButton";
-            bookIconButton.Size = new Size(338, 191);
+            bookIconButton.Size = new Size(296, 143);
             bookIconButton.TabIndex = 7;
             bookIconButton.Text = "Libros";
             bookIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -425,10 +405,9 @@
             authorIconButton.IconChar = FontAwesome.Sharp.IconChar.Person;
             authorIconButton.IconColor = Color.White;
             authorIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            authorIconButton.Location = new Point(49, 128);
-            authorIconButton.Margin = new Padding(3, 4, 3, 4);
+            authorIconButton.Location = new Point(43, 96);
             authorIconButton.Name = "authorIconButton";
-            authorIconButton.Size = new Size(338, 191);
+            authorIconButton.Size = new Size(296, 143);
             authorIconButton.TabIndex = 6;
             authorIconButton.Text = "Autores";
             authorIconButton.TextAlign = ContentAlignment.BottomCenter;
@@ -441,9 +420,9 @@
             dashboardWelcomeLabel.AutoSize = true;
             dashboardWelcomeLabel.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             dashboardWelcomeLabel.ForeColor = Color.White;
-            dashboardWelcomeLabel.Location = new Point(47, 65);
+            dashboardWelcomeLabel.Location = new Point(41, 49);
             dashboardWelcomeLabel.Name = "dashboardWelcomeLabel";
-            dashboardWelcomeLabel.Size = new Size(247, 30);
+            dashboardWelcomeLabel.Size = new Size(188, 22);
             dashboardWelcomeLabel.TabIndex = 1;
             dashboardWelcomeLabel.Text = "Bienvenido usuario ";
             // 
@@ -452,24 +431,23 @@
             dashboardLabel.AutoSize = true;
             dashboardLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             dashboardLabel.ForeColor = Color.White;
-            dashboardLabel.Location = new Point(545, 16);
+            dashboardLabel.Location = new Point(477, 12);
             dashboardLabel.Name = "dashboardLabel";
-            dashboardLabel.Size = new Size(102, 32);
+            dashboardLabel.Size = new Size(80, 25);
             dashboardLabel.TabIndex = 0;
             dashboardLabel.Text = "INICIO";
             // 
             // DashboardForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1467, 948);
+            ClientSize = new Size(1284, 711);
             Controls.Add(dashboardContentPanel);
             Controls.Add(dashboardSideBarPanel);
             Controls.Add(dashboardTopBarPanel);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "DashboardForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DashboardForm";

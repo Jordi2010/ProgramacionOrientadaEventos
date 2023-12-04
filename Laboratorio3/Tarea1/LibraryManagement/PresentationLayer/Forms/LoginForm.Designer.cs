@@ -63,9 +63,8 @@
             loginTopBarPanel.Controls.Add(closeLoginButton);
             loginTopBarPanel.Dock = DockStyle.Top;
             loginTopBarPanel.Location = new Point(0, 0);
-            loginTopBarPanel.Margin = new Padding(3, 4, 3, 4);
             loginTopBarPanel.Name = "loginTopBarPanel";
-            loginTopBarPanel.Size = new Size(1467, 47);
+            loginTopBarPanel.Size = new Size(1284, 35);
             loginTopBarPanel.TabIndex = 1;
             // 
             // minimizeLoginButton
@@ -75,10 +74,9 @@
             minimizeLoginButton.BackgroundImageLayout = ImageLayout.Stretch;
             minimizeLoginButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             minimizeLoginButton.FlatStyle = FlatStyle.Flat;
-            minimizeLoginButton.Location = new Point(1374, 13);
-            minimizeLoginButton.Margin = new Padding(3, 4, 3, 4);
+            minimizeLoginButton.Location = new Point(1202, 10);
             minimizeLoginButton.Name = "minimizeLoginButton";
-            minimizeLoginButton.Size = new Size(18, 20);
+            minimizeLoginButton.Size = new Size(16, 15);
             minimizeLoginButton.TabIndex = 4;
             minimizeLoginButton.UseVisualStyleBackColor = true;
             minimizeLoginButton.Click += minimizeLoginButton_Click;
@@ -90,10 +88,9 @@
             sizeLoginButton.BackgroundImageLayout = ImageLayout.Stretch;
             sizeLoginButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             sizeLoginButton.FlatStyle = FlatStyle.Flat;
-            sizeLoginButton.Location = new Point(1407, 13);
-            sizeLoginButton.Margin = new Padding(3, 4, 3, 4);
+            sizeLoginButton.Location = new Point(1231, 10);
             sizeLoginButton.Name = "sizeLoginButton";
-            sizeLoginButton.Size = new Size(18, 20);
+            sizeLoginButton.Size = new Size(16, 15);
             sizeLoginButton.TabIndex = 3;
             sizeLoginButton.UseVisualStyleBackColor = true;
             sizeLoginButton.Click += sizeLoginButton_Click;
@@ -105,10 +102,9 @@
             closeLoginButton.BackgroundImageLayout = ImageLayout.Stretch;
             closeLoginButton.FlatAppearance.BorderColor = SystemColors.Highlight;
             closeLoginButton.FlatStyle = FlatStyle.Flat;
-            closeLoginButton.Location = new Point(1438, 13);
-            closeLoginButton.Margin = new Padding(3, 4, 3, 4);
+            closeLoginButton.Location = new Point(1258, 10);
             closeLoginButton.Name = "closeLoginButton";
-            closeLoginButton.Size = new Size(18, 20);
+            closeLoginButton.Size = new Size(16, 15);
             closeLoginButton.TabIndex = 2;
             closeLoginButton.UseVisualStyleBackColor = true;
             closeLoginButton.Click += closeLoginButton_Click;
@@ -119,10 +115,9 @@
             loginSideBarPanel.Controls.Add(titleLabel);
             loginSideBarPanel.Controls.Add(loginLogoPictureBox);
             loginSideBarPanel.Dock = DockStyle.Left;
-            loginSideBarPanel.Location = new Point(0, 47);
-            loginSideBarPanel.Margin = new Padding(3, 4, 3, 4);
+            loginSideBarPanel.Location = new Point(0, 35);
             loginSideBarPanel.Name = "loginSideBarPanel";
-            loginSideBarPanel.Size = new Size(445, 901);
+            loginSideBarPanel.Size = new Size(389, 676);
             loginSideBarPanel.TabIndex = 2;
             // 
             // titleLabel
@@ -131,9 +126,9 @@
             titleLabel.BackColor = Color.Transparent;
             titleLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             titleLabel.ForeColor = Color.White;
-            titleLabel.Location = new Point(12, 545);
+            titleLabel.Location = new Point(10, 409);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(417, 62);
+            titleLabel.Size = new Size(346, 50);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "SISTEMA\r\nDE ADMINISTRACIÓN DE BIBLIOTECA\r\n";
             titleLabel.TextAlign = ContentAlignment.TopCenter;
@@ -141,10 +136,9 @@
             // loginLogoPictureBox
             // 
             loginLogoPictureBox.Image = (Image)resources.GetObject("loginLogoPictureBox.Image");
-            loginLogoPictureBox.Location = new Point(70, 215);
-            loginLogoPictureBox.Margin = new Padding(3, 4, 3, 4);
+            loginLogoPictureBox.Location = new Point(61, 161);
             loginLogoPictureBox.Name = "loginLogoPictureBox";
-            loginLogoPictureBox.Size = new Size(288, 304);
+            loginLogoPictureBox.Size = new Size(252, 228);
             loginLogoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             loginLogoPictureBox.TabIndex = 0;
             loginLogoPictureBox.TabStop = false;
@@ -163,19 +157,17 @@
             loginContentPanel.Controls.Add(loginLabel);
             loginContentPanel.Controls.Add(SeePasswordpictureBox);
             loginContentPanel.Dock = DockStyle.Fill;
-            loginContentPanel.Location = new Point(445, 47);
-            loginContentPanel.Margin = new Padding(3, 4, 3, 4);
+            loginContentPanel.Location = new Point(389, 35);
             loginContentPanel.Name = "loginContentPanel";
-            loginContentPanel.Size = new Size(1022, 901);
+            loginContentPanel.Size = new Size(895, 676);
             loginContentPanel.TabIndex = 3;
             // 
             // HidePasswordpictureBox
             // 
             HidePasswordpictureBox.Image = (Image)resources.GetObject("HidePasswordpictureBox.Image");
-            HidePasswordpictureBox.Location = new Point(733, 392);
-            HidePasswordpictureBox.Margin = new Padding(3, 4, 3, 4);
+            HidePasswordpictureBox.Location = new Point(641, 294);
             HidePasswordpictureBox.Name = "HidePasswordpictureBox";
-            HidePasswordpictureBox.Size = new Size(42, 47);
+            HidePasswordpictureBox.Size = new Size(37, 35);
             HidePasswordpictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             HidePasswordpictureBox.TabIndex = 9;
             HidePasswordpictureBox.TabStop = false;
@@ -188,10 +180,9 @@
             loginRegisterButton.FlatStyle = FlatStyle.Flat;
             loginRegisterButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             loginRegisterButton.ForeColor = Color.Silver;
-            loginRegisterButton.Location = new Point(310, 691);
-            loginRegisterButton.Margin = new Padding(3, 4, 3, 4);
+            loginRegisterButton.Location = new Point(271, 518);
             loginRegisterButton.Name = "loginRegisterButton";
-            loginRegisterButton.Size = new Size(469, 52);
+            loginRegisterButton.Size = new Size(410, 39);
             loginRegisterButton.TabIndex = 7;
             loginRegisterButton.Text = "Crear nueva cuenta";
             loginRegisterButton.UseVisualStyleBackColor = false;
@@ -204,9 +195,9 @@
             loginPasswordLinkLabel.AutoSize = true;
             loginPasswordLinkLabel.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             loginPasswordLinkLabel.LinkColor = Color.Silver;
-            loginPasswordLinkLabel.Location = new Point(448, 515);
+            loginPasswordLinkLabel.Location = new Point(392, 386);
             loginPasswordLinkLabel.Name = "loginPasswordLinkLabel";
-            loginPasswordLinkLabel.Size = new Size(207, 22);
+            loginPasswordLinkLabel.Size = new Size(166, 20);
             loginPasswordLinkLabel.TabIndex = 6;
             loginPasswordLinkLabel.TabStop = true;
             loginPasswordLinkLabel.Text = "Olvidé mi contraseña";
@@ -219,10 +210,9 @@
             loginButton.FlatStyle = FlatStyle.Flat;
             loginButton.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             loginButton.ForeColor = Color.Silver;
-            loginButton.Location = new Point(310, 569);
-            loginButton.Margin = new Padding(3, 4, 3, 4);
+            loginButton.Location = new Point(271, 427);
             loginButton.Name = "loginButton";
-            loginButton.Size = new Size(469, 52);
+            loginButton.Size = new Size(410, 39);
             loginButton.TabIndex = 5;
             loginButton.Text = "Iniciar sesión";
             loginButton.UseVisualStyleBackColor = false;
@@ -231,9 +221,9 @@
             // loginPasswordLineLabel
             // 
             loginPasswordLineLabel.BackColor = Color.Silver;
-            loginPasswordLineLabel.Location = new Point(309, 443);
+            loginPasswordLineLabel.Location = new Point(270, 332);
             loginPasswordLineLabel.Name = "loginPasswordLineLabel";
-            loginPasswordLineLabel.Size = new Size(469, 3);
+            loginPasswordLineLabel.Size = new Size(410, 2);
             loginPasswordLineLabel.TabIndex = 4;
             // 
             // loginPasswordTextBox
@@ -242,20 +232,19 @@
             loginPasswordTextBox.BorderStyle = BorderStyle.None;
             loginPasswordTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             loginPasswordTextBox.ForeColor = Color.Silver;
-            loginPasswordTextBox.Location = new Point(310, 405);
-            loginPasswordTextBox.Margin = new Padding(3, 4, 3, 4);
+            loginPasswordTextBox.Location = new Point(271, 304);
             loginPasswordTextBox.Name = "loginPasswordTextBox";
             loginPasswordTextBox.PasswordChar = '*';
             loginPasswordTextBox.PlaceholderText = "Contraseña";
-            loginPasswordTextBox.Size = new Size(469, 30);
+            loginPasswordTextBox.Size = new Size(410, 24);
             loginPasswordTextBox.TabIndex = 3;
             // 
             // loginUserLineLabel
             // 
             loginUserLineLabel.BackColor = Color.Silver;
-            loginUserLineLabel.Location = new Point(306, 288);
+            loginUserLineLabel.Location = new Point(268, 216);
             loginUserLineLabel.Name = "loginUserLineLabel";
-            loginUserLineLabel.Size = new Size(469, 3);
+            loginUserLineLabel.Size = new Size(410, 2);
             loginUserLineLabel.TabIndex = 2;
             // 
             // loginUserTextBox
@@ -264,11 +253,10 @@
             loginUserTextBox.BorderStyle = BorderStyle.None;
             loginUserTextBox.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             loginUserTextBox.ForeColor = Color.Silver;
-            loginUserTextBox.Location = new Point(306, 251);
-            loginUserTextBox.Margin = new Padding(3, 4, 3, 4);
+            loginUserTextBox.Location = new Point(268, 188);
             loginUserTextBox.Name = "loginUserTextBox";
             loginUserTextBox.PlaceholderText = "Usuario";
-            loginUserTextBox.Size = new Size(469, 30);
+            loginUserTextBox.Size = new Size(410, 24);
             loginUserTextBox.TabIndex = 1;
             // 
             // loginLabel
@@ -277,19 +265,18 @@
             loginLabel.BackColor = Color.Transparent;
             loginLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             loginLabel.ForeColor = Color.White;
-            loginLabel.Location = new Point(448, 155);
+            loginLabel.Location = new Point(392, 116);
             loginLabel.Name = "loginLabel";
-            loginLabel.Size = new Size(244, 32);
+            loginLabel.Size = new Size(191, 25);
             loginLabel.TabIndex = 0;
             loginLabel.Text = "INICIO DE SESIÓN";
             // 
             // SeePasswordpictureBox
             // 
             SeePasswordpictureBox.Image = (Image)resources.GetObject("SeePasswordpictureBox.Image");
-            SeePasswordpictureBox.Location = new Point(733, 392);
-            SeePasswordpictureBox.Margin = new Padding(3, 4, 3, 4);
+            SeePasswordpictureBox.Location = new Point(641, 294);
             SeePasswordpictureBox.Name = "SeePasswordpictureBox";
-            SeePasswordpictureBox.Size = new Size(42, 47);
+            SeePasswordpictureBox.Size = new Size(37, 35);
             SeePasswordpictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             SeePasswordpictureBox.TabIndex = 10;
             SeePasswordpictureBox.TabStop = false;
@@ -297,16 +284,15 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1467, 948);
+            ClientSize = new Size(1284, 711);
             Controls.Add(loginContentPanel);
             Controls.Add(loginSideBarPanel);
             Controls.Add(loginTopBarPanel);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";

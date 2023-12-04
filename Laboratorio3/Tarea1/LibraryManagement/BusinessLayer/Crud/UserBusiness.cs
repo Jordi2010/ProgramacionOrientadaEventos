@@ -25,6 +25,10 @@ namespace BusinessLayer.Crud
             userTable = userData.GetDataUser(usuario);
             return userTable;
         }
+        public void UpdateUserData(int userId, string newUsername, string newName, string newLastName, string newPhoneNumber, string newEmail)
+        {
+            userData.UpdateUser(userId, newUsername, newName, newLastName, newPhoneNumber, newEmail);
+        }
 
 
     }

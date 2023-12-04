@@ -35,40 +35,77 @@ namespace PresentationLayer.Forms
 
             DataTable userData = userBusiness.GetDataUser(username);
 
-            // Verificas si se encontraron datos para el usuario
             if (userData != null && userData.Rows.Count > 0)
             {
-                //agregar los demas labels
-                //El argumento dentro de los corchetes [""] debe ser el mismo que se obtiene de la consulta SQL
                 profileUserViewLabel.Text = $"{userData.Rows[0]["Usuario"]}";
                 profileNameViewLabel.Text = $"{userData.Rows[0]["Nombre"]}";
                 profileLastNameViewLabel.Text = $"{userData.Rows[0]["Apellido"]}";
-                //Agregar los que falten y eliminar los comentarios
+                profileEmailViewLabel.Text = $"{userData.Rows[0]["Correo"]}";
+                profilePhoneViewLabel.Text = $"{userData.Rows[0]["Telefono"]}";
             }
             else
             {
-                profileUserViewLabel.Text = "Data no found";
-                //en caso de no existir, agregar algun mensaje o eliminar este segmento else
+                profileUserViewLabel.Text = "USUARIO ACTUALIZADO CON EXITO,RECUERDA TU NUEVO USUARIO LA PROXIMA VEZ QUE INICIES SESION.";
+
             }
         }
 
         private void editProfileButton_Click(object sender, EventArgs e)
         {
-            //para rellenar los textbox usando el boton edit, simplemente se pasa como parametro el value de los labels anteriores.
-            profileUserTextBox.Text= profileUserViewLabel.Text;
+            profileUserTextBox.Text = profileUserViewLabel.Text;
+            profileNameTextBox.Text = profileNameViewLabel.Text;
+            profileLastNameTextBox.Text = profileLastNameViewLabel.Text;
+            profilePhoneTextBox.Text = profilePhoneViewLabel.Text;
+            profileEmailTextBox.Text = profileEmailViewLabel.Text;
         }
 
         private void saveProfileButton_Click(object sender, EventArgs e)
         {
-            //se tiene que crear una validacion para evitar guardar datos vacios
-            //se tiene que crear un update en la base de datos utilizando la entidad user
-            User user = new User();
-            user.UserName = profileEmailTextBox.Text;
-            //agregar los demas parametros y de esa forma validar y hacer el update.
-            //para este apartado puedes guiarte del form de cambio de contraseña para hacer el update.
-            //************************************** por cada apartado realizado, eliminar los comentarios ***************************
-            MessageBox.Show("Saving");
+            try
+            {
+                UserBusiness userBusiness = new UserBusiness();
+
+                DataTable userData = userBusiness.GetDataUser(username);
+
+                if (userData != null && userData.Rows.Count > 0)
+                {
+                    User user = new User
+                    {
+                        IdUser = Convert.ToInt32(userData.Rows[0]["ID"]),
+                        UserName = profileUserTextBox.Text,
+                        Name = profileNameTextBox.Text,
+                        LastName = profileLastNameTextBox.Text,
+                        Phone = profilePhoneTextBox.Text,
+                        Email = profileEmailTextBox.Text
+                       
+                    };
+
+                    var validator = new ProfileValidator();
+                    ValidationResult results = validator.Validate(user);
+
+                    if (!results.IsValid)
+                    {
+                        string errorMessage = string.Join(Environment.NewLine, results.Errors.Select(error => error.ErrorMessage));
+                        MessageBox.Show(errorMessage, "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    userBusiness.UpdateUserData(user.IdUser, user.UserName, user.Name, user.LastName, user.Phone, user.Email);
+
+                    LoadLabelUserData();
+
+                    MessageBox.Show("Datos actualizados correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron datos del usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-    
+
     }
 }

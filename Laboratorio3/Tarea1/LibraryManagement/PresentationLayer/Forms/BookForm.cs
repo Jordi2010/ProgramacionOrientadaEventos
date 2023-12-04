@@ -216,7 +216,7 @@ namespace PresentationLayer.Forms
 
         private void pdfBookButton_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\jordi\OneDrive\Documentos\Libros_Reporte.pdf";
+            string path = @"D:\Descargas\reporte\Libros_Reporte.pdf";
             try
             {
                 iTextPDF bookPDF = new iTextPDF();

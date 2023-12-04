@@ -144,7 +144,7 @@ namespace PresentationLayer.Forms
 
         private void pdfAuthorButton_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\jordi\OneDrive\Documentos\Autores_Reporte.pdf";
+            string path = @"D:\Descargas\reporte\Autores_Reporte.pdf";
             try
             {
                 iTextPDF authorPDF = new iTextPDF();
