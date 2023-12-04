@@ -29,337 +29,338 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
-            saveProfileButton = new Button();
-            editProfileButton = new Button();
-            profileEmailTextBox = new TextBox();
-            profileEmailLabel = new Label();
-            profileLastNameTextBox = new TextBox();
-            profilePhoneTextBox = new TextBox();
-            profilePhoneLabel = new Label();
-            profileLastNameLabel = new Label();
-            profileNameLabel = new Label();
-            profileUserTextBox = new TextBox();
-            profileUserLabel = new Label();
-            profileInformationGroupBox = new GroupBox();
-            profileEmailViewLabel = new Label();
-            profileEmailTitleLabel = new Label();
-            profilePhoneViewLabel = new Label();
-            profilePhoneTitleLabel = new Label();
-            profileLastNameViewLabel = new Label();
-            profileLastNameTitleLabel = new Label();
-            profileNameViewLabel = new Label();
-            profileNameTitleLabel = new Label();
-            profileUserViewLabel = new Label();
-            profileUserTitleLabel = new Label();
-            profilePictureBox = new PictureBox();
-            profileEditGroupBox = new GroupBox();
-            profileNameTextBox = new TextBox();
-            profileManagementLabel = new Label();
-            profileInformationGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).BeginInit();
-            profileEditGroupBox.SuspendLayout();
-            SuspendLayout();
+            this.saveProfileButton = new System.Windows.Forms.Button();
+            this.editProfileButton = new System.Windows.Forms.Button();
+            this.profileEmailTextBox = new System.Windows.Forms.TextBox();
+            this.profileEmailLabel = new System.Windows.Forms.Label();
+            this.profileLastNameTextBox = new System.Windows.Forms.TextBox();
+            this.profilePhoneTextBox = new System.Windows.Forms.TextBox();
+            this.profilePhoneLabel = new System.Windows.Forms.Label();
+            this.profileLastNameLabel = new System.Windows.Forms.Label();
+            this.profileNameLabel = new System.Windows.Forms.Label();
+            this.profileUserTextBox = new System.Windows.Forms.TextBox();
+            this.profileUserLabel = new System.Windows.Forms.Label();
+            this.profileInformationGroupBox = new System.Windows.Forms.GroupBox();
+            this.profileEmailViewLabel = new System.Windows.Forms.Label();
+            this.profileEmailTitleLabel = new System.Windows.Forms.Label();
+            this.profilePhoneViewLabel = new System.Windows.Forms.Label();
+            this.profilePhoneTitleLabel = new System.Windows.Forms.Label();
+            this.profileLastNameViewLabel = new System.Windows.Forms.Label();
+            this.profileLastNameTitleLabel = new System.Windows.Forms.Label();
+            this.profileNameViewLabel = new System.Windows.Forms.Label();
+            this.profileNameTitleLabel = new System.Windows.Forms.Label();
+            this.profileUserViewLabel = new System.Windows.Forms.Label();
+            this.profileUserTitleLabel = new System.Windows.Forms.Label();
+            this.profilePictureBox = new System.Windows.Forms.PictureBox();
+            this.profileEditGroupBox = new System.Windows.Forms.GroupBox();
+            this.profileNameTextBox = new System.Windows.Forms.TextBox();
+            this.profileManagementLabel = new System.Windows.Forms.Label();
+            this.profileInformationGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePictureBox)).BeginInit();
+            this.profileEditGroupBox.SuspendLayout();
+            this.SuspendLayout();
             // 
             // saveProfileButton
             // 
-            saveProfileButton.BackColor = Color.FromArgb(25, 42, 86);
-            saveProfileButton.FlatAppearance.BorderColor = Color.Teal;
-            saveProfileButton.FlatStyle = FlatStyle.Flat;
-            saveProfileButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            saveProfileButton.ForeColor = Color.White;
-            saveProfileButton.Location = new Point(833, 583);
-            saveProfileButton.Name = "saveProfileButton";
-            saveProfileButton.Size = new Size(110, 31);
-            saveProfileButton.TabIndex = 32;
-            saveProfileButton.Text = "Guardar";
-            saveProfileButton.UseVisualStyleBackColor = false;
-            saveProfileButton.Click += saveProfileButton_Click;
+            this.saveProfileButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
+            this.saveProfileButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.saveProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveProfileButton.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.saveProfileButton.ForeColor = System.Drawing.Color.White;
+            this.saveProfileButton.Location = new System.Drawing.Point(141, 497);
+            this.saveProfileButton.Name = "saveProfileButton";
+            this.saveProfileButton.Size = new System.Drawing.Size(110, 31);
+            this.saveProfileButton.TabIndex = 32;
+            this.saveProfileButton.Text = "Guardar";
+            this.saveProfileButton.UseVisualStyleBackColor = false;
+            this.saveProfileButton.Click += new System.EventHandler(this.saveProfileButton_Click);
             // 
             // editProfileButton
             // 
-            editProfileButton.BackColor = Color.RoyalBlue;
-            editProfileButton.FlatAppearance.BorderColor = Color.Teal;
-            editProfileButton.FlatStyle = FlatStyle.Flat;
-            editProfileButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            editProfileButton.ForeColor = Color.White;
-            editProfileButton.Location = new Point(269, 532);
-            editProfileButton.Name = "editProfileButton";
-            editProfileButton.Size = new Size(110, 31);
-            editProfileButton.TabIndex = 33;
-            editProfileButton.Text = "Editar";
-            editProfileButton.UseVisualStyleBackColor = false;
-            editProfileButton.Click += editProfileButton_Click;
+            this.editProfileButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.editProfileButton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.editProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editProfileButton.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.editProfileButton.ForeColor = System.Drawing.Color.White;
+            this.editProfileButton.Location = new System.Drawing.Point(271, 497);
+            this.editProfileButton.Name = "editProfileButton";
+            this.editProfileButton.Size = new System.Drawing.Size(110, 31);
+            this.editProfileButton.TabIndex = 33;
+            this.editProfileButton.Text = "Editar";
+            this.editProfileButton.UseVisualStyleBackColor = false;
+            this.editProfileButton.Click += new System.EventHandler(this.editProfileButton_Click);
             // 
             // profileEmailTextBox
             // 
-            profileEmailTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileEmailTextBox.Location = new Point(12, 381);
-            profileEmailTextBox.Name = "profileEmailTextBox";
-            profileEmailTextBox.Size = new Size(359, 26);
-            profileEmailTextBox.TabIndex = 24;
+            this.profileEmailTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileEmailTextBox.Location = new System.Drawing.Point(12, 381);
+            this.profileEmailTextBox.Name = "profileEmailTextBox";
+            this.profileEmailTextBox.Size = new System.Drawing.Size(359, 26);
+            this.profileEmailTextBox.TabIndex = 24;
             // 
             // profileEmailLabel
             // 
-            profileEmailLabel.AutoSize = true;
-            profileEmailLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileEmailLabel.ForeColor = Color.White;
-            profileEmailLabel.Location = new Point(10, 352);
-            profileEmailLabel.Name = "profileEmailLabel";
-            profileEmailLabel.Size = new Size(171, 21);
-            profileEmailLabel.TabIndex = 23;
-            profileEmailLabel.Text = "Correo electrónico:";
+            this.profileEmailLabel.AutoSize = true;
+            this.profileEmailLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileEmailLabel.ForeColor = System.Drawing.Color.White;
+            this.profileEmailLabel.Location = new System.Drawing.Point(10, 352);
+            this.profileEmailLabel.Name = "profileEmailLabel";
+            this.profileEmailLabel.Size = new System.Drawing.Size(171, 21);
+            this.profileEmailLabel.TabIndex = 23;
+            this.profileEmailLabel.Text = "Correo electrónico:";
             // 
             // profileLastNameTextBox
             // 
-            profileLastNameTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileLastNameTextBox.Location = new Point(12, 228);
-            profileLastNameTextBox.Name = "profileLastNameTextBox";
-            profileLastNameTextBox.Size = new Size(359, 26);
-            profileLastNameTextBox.TabIndex = 20;
+            this.profileLastNameTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileLastNameTextBox.Location = new System.Drawing.Point(12, 228);
+            this.profileLastNameTextBox.Name = "profileLastNameTextBox";
+            this.profileLastNameTextBox.Size = new System.Drawing.Size(359, 26);
+            this.profileLastNameTextBox.TabIndex = 20;
             // 
             // profilePhoneTextBox
             // 
-            profilePhoneTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profilePhoneTextBox.Location = new Point(12, 304);
-            profilePhoneTextBox.Name = "profilePhoneTextBox";
-            profilePhoneTextBox.Size = new Size(359, 26);
-            profilePhoneTextBox.TabIndex = 22;
+            this.profilePhoneTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profilePhoneTextBox.Location = new System.Drawing.Point(12, 304);
+            this.profilePhoneTextBox.Name = "profilePhoneTextBox";
+            this.profilePhoneTextBox.Size = new System.Drawing.Size(359, 26);
+            this.profilePhoneTextBox.TabIndex = 22;
             // 
             // profilePhoneLabel
             // 
-            profilePhoneLabel.AutoSize = true;
-            profilePhoneLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profilePhoneLabel.ForeColor = Color.White;
-            profilePhoneLabel.Location = new Point(10, 275);
-            profilePhoneLabel.Name = "profilePhoneLabel";
-            profilePhoneLabel.Size = new Size(85, 21);
-            profilePhoneLabel.TabIndex = 21;
-            profilePhoneLabel.Text = "Teléfono:";
+            this.profilePhoneLabel.AutoSize = true;
+            this.profilePhoneLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profilePhoneLabel.ForeColor = System.Drawing.Color.White;
+            this.profilePhoneLabel.Location = new System.Drawing.Point(10, 275);
+            this.profilePhoneLabel.Name = "profilePhoneLabel";
+            this.profilePhoneLabel.Size = new System.Drawing.Size(85, 21);
+            this.profilePhoneLabel.TabIndex = 21;
+            this.profilePhoneLabel.Text = "Teléfono:";
             // 
             // profileLastNameLabel
             // 
-            profileLastNameLabel.AutoSize = true;
-            profileLastNameLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileLastNameLabel.ForeColor = Color.White;
-            profileLastNameLabel.Location = new Point(702, 250);
-            profileLastNameLabel.Name = "profileLastNameLabel";
-            profileLastNameLabel.Size = new Size(83, 21);
-            profileLastNameLabel.TabIndex = 31;
-            profileLastNameLabel.Text = "Apellido:";
+            this.profileLastNameLabel.AutoSize = true;
+            this.profileLastNameLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileLastNameLabel.ForeColor = System.Drawing.Color.White;
+            this.profileLastNameLabel.Location = new System.Drawing.Point(702, 250);
+            this.profileLastNameLabel.Name = "profileLastNameLabel";
+            this.profileLastNameLabel.Size = new System.Drawing.Size(83, 21);
+            this.profileLastNameLabel.TabIndex = 31;
+            this.profileLastNameLabel.Text = "Apellido:";
             // 
             // profileNameLabel
             // 
-            profileNameLabel.AutoSize = true;
-            profileNameLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileNameLabel.ForeColor = Color.White;
-            profileNameLabel.Location = new Point(10, 119);
-            profileNameLabel.Name = "profileNameLabel";
-            profileNameLabel.Size = new Size(82, 21);
-            profileNameLabel.TabIndex = 25;
-            profileNameLabel.Text = "Nombre:";
+            this.profileNameLabel.AutoSize = true;
+            this.profileNameLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileNameLabel.ForeColor = System.Drawing.Color.White;
+            this.profileNameLabel.Location = new System.Drawing.Point(10, 119);
+            this.profileNameLabel.Name = "profileNameLabel";
+            this.profileNameLabel.Size = new System.Drawing.Size(82, 21);
+            this.profileNameLabel.TabIndex = 25;
+            this.profileNameLabel.Text = "Nombre:";
             // 
             // profileUserTextBox
             // 
-            profileUserTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileUserTextBox.Location = new Point(12, 72);
-            profileUserTextBox.Name = "profileUserTextBox";
-            profileUserTextBox.Size = new Size(359, 26);
-            profileUserTextBox.TabIndex = 18;
+            this.profileUserTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileUserTextBox.Location = new System.Drawing.Point(12, 72);
+            this.profileUserTextBox.Name = "profileUserTextBox";
+            this.profileUserTextBox.Size = new System.Drawing.Size(359, 26);
+            this.profileUserTextBox.TabIndex = 18;
             // 
             // profileUserLabel
             // 
-            profileUserLabel.AutoSize = true;
-            profileUserLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileUserLabel.ForeColor = Color.White;
-            profileUserLabel.Location = new Point(702, 94);
-            profileUserLabel.Name = "profileUserLabel";
-            profileUserLabel.Size = new Size(75, 21);
-            profileUserLabel.TabIndex = 30;
-            profileUserLabel.Text = "Usuario:";
+            this.profileUserLabel.AutoSize = true;
+            this.profileUserLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileUserLabel.ForeColor = System.Drawing.Color.White;
+            this.profileUserLabel.Location = new System.Drawing.Point(702, 94);
+            this.profileUserLabel.Name = "profileUserLabel";
+            this.profileUserLabel.Size = new System.Drawing.Size(75, 21);
+            this.profileUserLabel.TabIndex = 30;
+            this.profileUserLabel.Text = "Usuario:";
             // 
             // profileInformationGroupBox
             // 
-            profileInformationGroupBox.Controls.Add(profileEmailViewLabel);
-            profileInformationGroupBox.Controls.Add(profileEmailTitleLabel);
-            profileInformationGroupBox.Controls.Add(profilePhoneViewLabel);
-            profileInformationGroupBox.Controls.Add(profilePhoneTitleLabel);
-            profileInformationGroupBox.Controls.Add(profileLastNameViewLabel);
-            profileInformationGroupBox.Controls.Add(profileLastNameTitleLabel);
-            profileInformationGroupBox.Controls.Add(profileNameViewLabel);
-            profileInformationGroupBox.Controls.Add(profileNameTitleLabel);
-            profileInformationGroupBox.Controls.Add(profileUserViewLabel);
-            profileInformationGroupBox.Controls.Add(profileUserTitleLabel);
-            profileInformationGroupBox.Controls.Add(profilePictureBox);
-            profileInformationGroupBox.Controls.Add(editProfileButton);
-            profileInformationGroupBox.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileInformationGroupBox.ForeColor = Color.White;
-            profileInformationGroupBox.Location = new Point(7, 51);
-            profileInformationGroupBox.Name = "profileInformationGroupBox";
-            profileInformationGroupBox.Size = new Size(679, 615);
-            profileInformationGroupBox.TabIndex = 34;
-            profileInformationGroupBox.TabStop = false;
-            profileInformationGroupBox.Text = "Información de perfil actual";
+            this.profileInformationGroupBox.Controls.Add(this.profileEmailViewLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileEmailTitleLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profilePhoneViewLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profilePhoneTitleLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileLastNameViewLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileLastNameTitleLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileNameViewLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileNameTitleLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileUserViewLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profileUserTitleLabel);
+            this.profileInformationGroupBox.Controls.Add(this.profilePictureBox);
+            this.profileInformationGroupBox.Controls.Add(this.editProfileButton);
+            this.profileInformationGroupBox.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileInformationGroupBox.ForeColor = System.Drawing.Color.White;
+            this.profileInformationGroupBox.Location = new System.Drawing.Point(7, 51);
+            this.profileInformationGroupBox.Name = "profileInformationGroupBox";
+            this.profileInformationGroupBox.Size = new System.Drawing.Size(679, 615);
+            this.profileInformationGroupBox.TabIndex = 34;
+            this.profileInformationGroupBox.TabStop = false;
+            this.profileInformationGroupBox.Text = "Información de perfil actual";
             // 
             // profileEmailViewLabel
             // 
-            profileEmailViewLabel.Location = new Point(242, 382);
-            profileEmailViewLabel.Name = "profileEmailViewLabel";
-            profileEmailViewLabel.Size = new Size(417, 21);
-            profileEmailViewLabel.TabIndex = 44;
-            profileEmailViewLabel.Text = "Correo electrónico";
+            this.profileEmailViewLabel.Location = new System.Drawing.Point(242, 382);
+            this.profileEmailViewLabel.Name = "profileEmailViewLabel";
+            this.profileEmailViewLabel.Size = new System.Drawing.Size(417, 21);
+            this.profileEmailViewLabel.TabIndex = 44;
+            this.profileEmailViewLabel.Text = "Correo electrónico";
             // 
             // profileEmailTitleLabel
             // 
-            profileEmailTitleLabel.AutoSize = true;
-            profileEmailTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileEmailTitleLabel.Location = new Point(242, 352);
-            profileEmailTitleLabel.Name = "profileEmailTitleLabel";
-            profileEmailTitleLabel.Size = new Size(168, 19);
-            profileEmailTitleLabel.TabIndex = 43;
-            profileEmailTitleLabel.Text = "Correo electrónico:";
+            this.profileEmailTitleLabel.AutoSize = true;
+            this.profileEmailTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileEmailTitleLabel.Location = new System.Drawing.Point(242, 352);
+            this.profileEmailTitleLabel.Name = "profileEmailTitleLabel";
+            this.profileEmailTitleLabel.Size = new System.Drawing.Size(168, 19);
+            this.profileEmailTitleLabel.TabIndex = 43;
+            this.profileEmailTitleLabel.Text = "Correo electrónico:";
             // 
             // profilePhoneViewLabel
             // 
-            profilePhoneViewLabel.Location = new Point(242, 305);
-            profilePhoneViewLabel.Name = "profilePhoneViewLabel";
-            profilePhoneViewLabel.Size = new Size(417, 21);
-            profilePhoneViewLabel.TabIndex = 42;
-            profilePhoneViewLabel.Text = "Teléfono";
+            this.profilePhoneViewLabel.Location = new System.Drawing.Point(242, 305);
+            this.profilePhoneViewLabel.Name = "profilePhoneViewLabel";
+            this.profilePhoneViewLabel.Size = new System.Drawing.Size(417, 21);
+            this.profilePhoneViewLabel.TabIndex = 42;
+            this.profilePhoneViewLabel.Text = "Teléfono";
             // 
             // profilePhoneTitleLabel
             // 
-            profilePhoneTitleLabel.AutoSize = true;
-            profilePhoneTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profilePhoneTitleLabel.Location = new Point(242, 275);
-            profilePhoneTitleLabel.Name = "profilePhoneTitleLabel";
-            profilePhoneTitleLabel.Size = new Size(84, 19);
-            profilePhoneTitleLabel.TabIndex = 41;
-            profilePhoneTitleLabel.Text = "Teléfono:";
+            this.profilePhoneTitleLabel.AutoSize = true;
+            this.profilePhoneTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profilePhoneTitleLabel.Location = new System.Drawing.Point(242, 275);
+            this.profilePhoneTitleLabel.Name = "profilePhoneTitleLabel";
+            this.profilePhoneTitleLabel.Size = new System.Drawing.Size(84, 19);
+            this.profilePhoneTitleLabel.TabIndex = 41;
+            this.profilePhoneTitleLabel.Text = "Teléfono:";
             // 
             // profileLastNameViewLabel
             // 
-            profileLastNameViewLabel.Location = new Point(242, 229);
-            profileLastNameViewLabel.Name = "profileLastNameViewLabel";
-            profileLastNameViewLabel.Size = new Size(417, 21);
-            profileLastNameViewLabel.TabIndex = 40;
-            profileLastNameViewLabel.Text = "Apellido";
+            this.profileLastNameViewLabel.Location = new System.Drawing.Point(242, 229);
+            this.profileLastNameViewLabel.Name = "profileLastNameViewLabel";
+            this.profileLastNameViewLabel.Size = new System.Drawing.Size(417, 21);
+            this.profileLastNameViewLabel.TabIndex = 40;
+            this.profileLastNameViewLabel.Text = "Apellido";
             // 
             // profileLastNameTitleLabel
             // 
-            profileLastNameTitleLabel.AutoSize = true;
-            profileLastNameTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileLastNameTitleLabel.Location = new Point(242, 199);
-            profileLastNameTitleLabel.Name = "profileLastNameTitleLabel";
-            profileLastNameTitleLabel.Size = new Size(83, 19);
-            profileLastNameTitleLabel.TabIndex = 39;
-            profileLastNameTitleLabel.Text = "Apellido:";
+            this.profileLastNameTitleLabel.AutoSize = true;
+            this.profileLastNameTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileLastNameTitleLabel.Location = new System.Drawing.Point(242, 199);
+            this.profileLastNameTitleLabel.Name = "profileLastNameTitleLabel";
+            this.profileLastNameTitleLabel.Size = new System.Drawing.Size(83, 19);
+            this.profileLastNameTitleLabel.TabIndex = 39;
+            this.profileLastNameTitleLabel.Text = "Apellido:";
             // 
             // profileNameViewLabel
             // 
-            profileNameViewLabel.Location = new Point(242, 149);
-            profileNameViewLabel.Name = "profileNameViewLabel";
-            profileNameViewLabel.Size = new Size(417, 21);
-            profileNameViewLabel.TabIndex = 38;
-            profileNameViewLabel.Text = "Nombre";
+            this.profileNameViewLabel.Location = new System.Drawing.Point(242, 149);
+            this.profileNameViewLabel.Name = "profileNameViewLabel";
+            this.profileNameViewLabel.Size = new System.Drawing.Size(417, 21);
+            this.profileNameViewLabel.TabIndex = 38;
+            this.profileNameViewLabel.Text = "Nombre";
             // 
             // profileNameTitleLabel
             // 
-            profileNameTitleLabel.AutoSize = true;
-            profileNameTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileNameTitleLabel.Location = new Point(242, 119);
-            profileNameTitleLabel.Name = "profileNameTitleLabel";
-            profileNameTitleLabel.Size = new Size(81, 19);
-            profileNameTitleLabel.TabIndex = 37;
-            profileNameTitleLabel.Text = "Nombre:";
+            this.profileNameTitleLabel.AutoSize = true;
+            this.profileNameTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileNameTitleLabel.Location = new System.Drawing.Point(242, 119);
+            this.profileNameTitleLabel.Name = "profileNameTitleLabel";
+            this.profileNameTitleLabel.Size = new System.Drawing.Size(81, 19);
+            this.profileNameTitleLabel.TabIndex = 37;
+            this.profileNameTitleLabel.Text = "Nombre:";
             // 
             // profileUserViewLabel
             // 
-            profileUserViewLabel.Location = new Point(242, 73);
-            profileUserViewLabel.Name = "profileUserViewLabel";
-            profileUserViewLabel.Size = new Size(417, 21);
-            profileUserViewLabel.TabIndex = 36;
-            profileUserViewLabel.Text = "Usuario";
+            this.profileUserViewLabel.Location = new System.Drawing.Point(242, 73);
+            this.profileUserViewLabel.Name = "profileUserViewLabel";
+            this.profileUserViewLabel.Size = new System.Drawing.Size(417, 21);
+            this.profileUserViewLabel.TabIndex = 36;
+            this.profileUserViewLabel.Text = "Usuario";
             // 
             // profileUserTitleLabel
             // 
-            profileUserTitleLabel.AutoSize = true;
-            profileUserTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileUserTitleLabel.Location = new Point(242, 43);
-            profileUserTitleLabel.Name = "profileUserTitleLabel";
-            profileUserTitleLabel.Size = new Size(73, 19);
-            profileUserTitleLabel.TabIndex = 35;
-            profileUserTitleLabel.Text = "Usuario:";
+            this.profileUserTitleLabel.AutoSize = true;
+            this.profileUserTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileUserTitleLabel.Location = new System.Drawing.Point(242, 43);
+            this.profileUserTitleLabel.Name = "profileUserTitleLabel";
+            this.profileUserTitleLabel.Size = new System.Drawing.Size(73, 19);
+            this.profileUserTitleLabel.TabIndex = 35;
+            this.profileUserTitleLabel.Text = "Usuario:";
             // 
             // profilePictureBox
             // 
-            profilePictureBox.Image = (Image)resources.GetObject("profilePictureBox.Image");
-            profilePictureBox.Location = new Point(29, 41);
-            profilePictureBox.Name = "profilePictureBox";
-            profilePictureBox.Size = new Size(193, 445);
-            profilePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            profilePictureBox.TabIndex = 34;
-            profilePictureBox.TabStop = false;
+            this.profilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profilePictureBox.Image")));
+            this.profilePictureBox.Location = new System.Drawing.Point(29, 41);
+            this.profilePictureBox.Name = "profilePictureBox";
+            this.profilePictureBox.Size = new System.Drawing.Size(193, 445);
+            this.profilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.profilePictureBox.TabIndex = 34;
+            this.profilePictureBox.TabStop = false;
             // 
             // profileEditGroupBox
             // 
-            profileEditGroupBox.Controls.Add(profileNameTextBox);
-            profileEditGroupBox.Controls.Add(profileNameLabel);
-            profileEditGroupBox.Controls.Add(profileEmailTextBox);
-            profileEditGroupBox.Controls.Add(profileEmailLabel);
-            profileEditGroupBox.Controls.Add(profileLastNameTextBox);
-            profileEditGroupBox.Controls.Add(profileUserTextBox);
-            profileEditGroupBox.Controls.Add(profilePhoneTextBox);
-            profileEditGroupBox.Controls.Add(profilePhoneLabel);
-            profileEditGroupBox.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            profileEditGroupBox.ForeColor = Color.White;
-            profileEditGroupBox.Location = new Point(692, 51);
-            profileEditGroupBox.Name = "profileEditGroupBox";
-            profileEditGroupBox.Size = new Size(385, 615);
-            profileEditGroupBox.TabIndex = 35;
-            profileEditGroupBox.TabStop = false;
-            profileEditGroupBox.Text = "Editar mis datos";
+            this.profileEditGroupBox.Controls.Add(this.saveProfileButton);
+            this.profileEditGroupBox.Controls.Add(this.profileNameTextBox);
+            this.profileEditGroupBox.Controls.Add(this.profileNameLabel);
+            this.profileEditGroupBox.Controls.Add(this.profileEmailTextBox);
+            this.profileEditGroupBox.Controls.Add(this.profileEmailLabel);
+            this.profileEditGroupBox.Controls.Add(this.profileLastNameTextBox);
+            this.profileEditGroupBox.Controls.Add(this.profileUserTextBox);
+            this.profileEditGroupBox.Controls.Add(this.profilePhoneTextBox);
+            this.profileEditGroupBox.Controls.Add(this.profilePhoneLabel);
+            this.profileEditGroupBox.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileEditGroupBox.ForeColor = System.Drawing.Color.White;
+            this.profileEditGroupBox.Location = new System.Drawing.Point(692, 51);
+            this.profileEditGroupBox.Name = "profileEditGroupBox";
+            this.profileEditGroupBox.Size = new System.Drawing.Size(385, 615);
+            this.profileEditGroupBox.TabIndex = 35;
+            this.profileEditGroupBox.TabStop = false;
+            this.profileEditGroupBox.Text = "Editar mis datos";
             // 
             // profileNameTextBox
             // 
-            profileNameTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileNameTextBox.Location = new Point(10, 148);
-            profileNameTextBox.Name = "profileNameTextBox";
-            profileNameTextBox.Size = new Size(359, 26);
-            profileNameTextBox.TabIndex = 29;
+            this.profileNameTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profileNameTextBox.Location = new System.Drawing.Point(10, 148);
+            this.profileNameTextBox.Name = "profileNameTextBox";
+            this.profileNameTextBox.Size = new System.Drawing.Size(359, 26);
+            this.profileNameTextBox.TabIndex = 29;
             // 
             // profileManagementLabel
             // 
-            profileManagementLabel.AutoSize = true;
-            profileManagementLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileManagementLabel.ForeColor = Color.White;
-            profileManagementLabel.Location = new Point(384, 11);
-            profileManagementLabel.Name = "profileManagementLabel";
-            profileManagementLabel.Size = new Size(301, 25);
-            profileManagementLabel.TabIndex = 29;
-            profileManagementLabel.Text = "ADMINISTRACIÓN DEL PERFIL";
+            this.profileManagementLabel.AutoSize = true;
+            this.profileManagementLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileManagementLabel.ForeColor = System.Drawing.Color.White;
+            this.profileManagementLabel.Location = new System.Drawing.Point(384, 11);
+            this.profileManagementLabel.Name = "profileManagementLabel";
+            this.profileManagementLabel.Size = new System.Drawing.Size(301, 25);
+            this.profileManagementLabel.TabIndex = 29;
+            this.profileManagementLabel.Text = "ADMINISTRACIÓN DEL PERFIL";
             // 
             // ProfileForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(10, 61, 98);
-            ClientSize = new Size(1084, 591);
-            Controls.Add(saveProfileButton);
-            Controls.Add(profileLastNameLabel);
-            Controls.Add(profileUserLabel);
-            Controls.Add(profileInformationGroupBox);
-            Controls.Add(profileEditGroupBox);
-            Controls.Add(profileManagementLabel);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "ProfileForm";
-            Text = "ProfileForm";
-            profileInformationGroupBox.ResumeLayout(false);
-            profileInformationGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).EndInit();
-            profileEditGroupBox.ResumeLayout(false);
-            profileEditGroupBox.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.ClientSize = new System.Drawing.Size(1084, 591);
+            this.Controls.Add(this.profileLastNameLabel);
+            this.Controls.Add(this.profileUserLabel);
+            this.Controls.Add(this.profileInformationGroupBox);
+            this.Controls.Add(this.profileEditGroupBox);
+            this.Controls.Add(this.profileManagementLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ProfileForm";
+            this.Text = "ProfileForm";
+            this.profileInformationGroupBox.ResumeLayout(false);
+            this.profileInformationGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePictureBox)).EndInit();
+            this.profileEditGroupBox.ResumeLayout(false);
+            this.profileEditGroupBox.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

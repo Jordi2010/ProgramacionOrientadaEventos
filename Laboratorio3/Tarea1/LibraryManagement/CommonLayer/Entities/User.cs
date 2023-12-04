@@ -18,5 +18,6 @@ namespace CommonLayer.Entities
         public DateTime CreationDate { get; set; }
         public string newPassword { get; set; }
         public string confirmPassword { get; set; }
+        public static string GlobalUserName { get; set; }
     }
 }

@@ -114,6 +114,7 @@ namespace PresentationLayer.Forms
                         var credentials = authBusiness.LoginUser(user);
                         if (credentials == true)
                         {
+                            User.GlobalUserName = user.UserName;
                             DashboardForm dashboardForm = new DashboardForm(user.UserName);
                             dashboardForm.Show();
                             dashboardForm.FormClosed += Logout;

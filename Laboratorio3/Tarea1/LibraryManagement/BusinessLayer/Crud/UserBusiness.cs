@@ -18,6 +18,14 @@ namespace BusinessLayer.Crud
             userTable = userData.SearchUser(search);
             return userTable;
         }
-    
+
+        public DataTable GetDataUser(string usuario)
+        {
+            DataTable userTable = new DataTable();
+            userTable = userData.GetDataUser(usuario);
+            return userTable;
+        }
+
+
     }
 }

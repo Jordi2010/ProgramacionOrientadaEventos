@@ -50,6 +50,24 @@ namespace DataLayer.Data
             return userData;
         }
 
+
+        public DataTable GetDataUser(string usuario)
+        {
+            DataTable userData = new DataTable();
+
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT idUsuario as ID, usuario as Usuario, nombre as Nombre, apellido as Apellido, correo as Correo, telefono as Telefono FROM usuarios WHERE usuario = @usuario";
+            _sqlCommand.CommandType = CommandType.Text;
+
+            _sqlCommand.Parameters.AddWithValue("@usuario", usuario);
+            _readerRows = _sqlCommand.ExecuteReader();
+            userData.Load(_readerRows);
+
+            _connection.CloseConnection();
+
+            return userData;
+        }
+
         public DataTable SearchUser(string search)
         {
             DataTable userData = new DataTable();
