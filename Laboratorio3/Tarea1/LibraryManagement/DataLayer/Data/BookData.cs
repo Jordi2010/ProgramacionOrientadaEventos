@@ -19,10 +19,7 @@ namespace DataLayer.Data
         public DataTable GetAllBook()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT libros.idLibro AS ID, libros.editorialLibro AS Editorial, libros.nombreLibro AS Libro, libros.isbnLibro AS ISBN, " +
-                   "libros.generoLibro AS Género, CONCAT(autores.nombre, ' ', autores.apellido) AS Autor, estadoLibro.estadoLibro AS Estado, libros.idAutor, libros.idestadoLibro " +
-                   "FROM libros INNER JOIN autores ON libros.idAutor = autores.idAutor " +
-                   "INNER JOIN estadoLibro ON libros.idestadoLibro = estadoLibro.idestadoLibro";
+            _sqlCommand.CommandText = "SELECT libros.idLibro AS ID, libros.nombreLibro AS Libro, libros.editorialLibro AS Editorial, libros.isbnLibro AS ISBN, libros.generoLibro AS Género, CONCAT(autores.nombre, ' ', autores.apellido) AS Autor, estadoLibro.estadoLibro AS Estado FROM libros INNER JOIN autores ON libros.idAutor = autores.idAutor INNER JOIN estadoLibro ON libros.idestadoLibro = estadoLibro.idestadoLibro";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();
@@ -36,7 +33,7 @@ namespace DataLayer.Data
         public DataTable SearchBook(string search)
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT * FROM libros WHERE nombreLibro LIKE '%' + @search + '%'";
+            _sqlCommand.CommandText = "SELECT libros.idLibro AS ID, libros.nombreLibro AS Libro, libros.editorialLibro AS Editorial, libros.isbnLibro AS ISBN, libros.generoLibro AS Género, CONCAT(autores.nombre, ' ', autores.apellido) AS Autor, estadoLibro.estadoLibro AS Estado, libros.idAutor, libros.idestadoLibro FROM libros INNER JOIN autores ON libros.idAutor = autores.idAutor INNER JOIN estadoLibro ON libros.idestadoLibro = estadoLibro.idestadoLibro WHERE nombreLibro LIKE '%' + @search + '%'";
             _sqlCommand.CommandType = CommandType.Text;
             _sqlCommand.Parameters.AddWithValue("@search", search);
             _readerRows = _sqlCommand.ExecuteReader();

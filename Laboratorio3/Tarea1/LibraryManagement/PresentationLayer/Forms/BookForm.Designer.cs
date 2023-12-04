@@ -90,6 +90,7 @@
             pdfBookButton.TabIndex = 24;
             pdfBookButton.Text = "PDF";
             pdfBookButton.UseVisualStyleBackColor = false;
+            pdfBookButton.Click += pdfBookButton_Click;
             // 
             // deleteBookButton
             // 
@@ -307,7 +308,7 @@
             bookGenreTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             bookGenreTextBox.Location = new Point(12, 381);
             bookGenreTextBox.Name = "bookGenreTextBox";
-            bookGenreTextBox.PlaceholderText = "ejemplo: ciencie ficción postapocalíptica";
+            bookGenreTextBox.PlaceholderText = "ejemplo: ciencia ficción postapocalíptica";
             bookGenreTextBox.Size = new Size(359, 26);
             bookGenreTextBox.TabIndex = 24;
             // 

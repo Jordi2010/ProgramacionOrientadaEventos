@@ -33,6 +33,7 @@ namespace DataLayer.Data
 
             return userData;
         }
+
         public DataTable GetAllUsers()
         {
             DataTable userData = new DataTable();
@@ -65,6 +66,7 @@ namespace DataLayer.Data
 
             return userData;
         }
+
         public void DeleteUser(int userId)
         {
             _sqlCommand.Connection = _connection.OpenConnection();
@@ -77,7 +79,6 @@ namespace DataLayer.Data
             _sqlCommand.Parameters.Clear();
             _connection.CloseConnection();
         }
-
 
         public void AddUser(Author author)
         {

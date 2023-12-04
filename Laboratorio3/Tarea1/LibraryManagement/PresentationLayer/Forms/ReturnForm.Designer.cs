@@ -100,6 +100,7 @@
             pdfReturnButton.TabIndex = 38;
             pdfReturnButton.Text = "PDF";
             pdfReturnButton.UseVisualStyleBackColor = false;
+            pdfReturnButton.Click += pdfReturnButton_Click;
             // 
             // deleteReturnButton
             // 

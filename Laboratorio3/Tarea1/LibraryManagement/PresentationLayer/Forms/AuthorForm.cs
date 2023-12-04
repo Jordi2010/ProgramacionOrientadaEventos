@@ -1,7 +1,9 @@
 ﻿using BusinessLayer.Crud;
 using CommonLayer.Entities;
 using DataLayer.MailServices;
+using PresentationLayer.Utilities;
 using FluentValidation.Results;
+using iText.Kernel.Colors;
 using PresentationLayer.Validations;
 using System;
 using System.Collections.Generic;
@@ -138,6 +140,24 @@ namespace PresentationLayer.Forms
         {
             AuthorBusiness authorBusiness = new AuthorBusiness();
             authorDataGridView.DataSource = authorBusiness.SearchAuthor(authorSearchTextBox.Text);
+        }
+
+        private void pdfAuthorButton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jordi\OneDrive\Documentos\Autores_Reporte.pdf";
+            try
+            {
+                iTextPDF authorPDF = new iTextPDF();
+                var document = authorPDF.IniatializePDF(path);
+                document.Add(authorPDF.GenerateHeaderPDF("REPORTE DE AUTORES", 16, ColorConstants.RED));
+                document.Add(authorPDF.GenerateTablePDF(3, authorDataGridView));
+                document.Close();
+                MessageBox.Show("PDF generado correctamente en documentos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

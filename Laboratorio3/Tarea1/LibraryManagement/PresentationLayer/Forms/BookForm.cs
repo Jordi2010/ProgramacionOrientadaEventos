@@ -2,6 +2,8 @@
 using CommonLayer.Entities;
 using DataLayer.MailServices;
 using FluentValidation.Results;
+using iText.Kernel.Colors;
+using PresentationLayer.Utilities;
 using PresentationLayer.Validations;
 using System;
 using System.Collections.Generic;
@@ -210,6 +212,24 @@ namespace PresentationLayer.Forms
         {
             BookBusiness bookBusiness = new BookBusiness();
             bookDataGridView.DataSource = bookBusiness.SearchBook(bookSearchTextBox.Text);
+        }
+
+        private void pdfBookButton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jordi\OneDrive\Documentos\Libros_Reporte.pdf";
+            try
+            {
+                iTextPDF bookPDF = new iTextPDF();
+                var document = bookPDF.IniatializePDF(path);
+                document.Add(bookPDF.GenerateHeaderPDF("REPORTE DE LIBROS", 16, ColorConstants.RED));
+                document.Add(bookPDF.GenerateTablePDF(7, bookDataGridView));
+                document.Close();
+                MessageBox.Show("PDF generado correctamente en documentos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

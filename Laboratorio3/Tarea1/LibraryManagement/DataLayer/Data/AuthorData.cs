@@ -43,10 +43,11 @@ namespace DataLayer.Data
             _sqlCommand.Parameters.Clear();
             _connection.CloseConnection();
         }
+
         public DataTable SearchAuthor(string search)
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT * FROM autores WHERE nombre LIKE '%' + @search + '%' OR apellido LIKE '%' + @search + '%'";
+            _sqlCommand.CommandText = "SELECT autores.idAutor AS ID, autores.nombre AS Nombre, autores.apellido AS Apellido FROM autores WHERE nombre LIKE '%' + @search + '%' OR apellido LIKE '%' + @search + '%'";
             _sqlCommand.CommandType = CommandType.Text;
             _sqlCommand.Parameters.AddWithValue("@search", search);
             _readerRows = _sqlCommand.ExecuteReader();

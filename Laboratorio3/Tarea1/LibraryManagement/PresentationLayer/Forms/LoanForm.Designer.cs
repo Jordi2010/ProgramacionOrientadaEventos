@@ -100,6 +100,7 @@
             pdfLoanButton.TabIndex = 38;
             pdfLoanButton.Text = "PDF";
             pdfLoanButton.UseVisualStyleBackColor = false;
+            pdfLoanButton.Click += pdfLoanButton_Click;
             // 
             // deleteLoanButton
             // 

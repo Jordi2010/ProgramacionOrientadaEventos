@@ -16,7 +16,7 @@ namespace PresentationLayer.Validations
 
             RuleFor(book => book.Title)
                   .NotEmpty().WithMessage("Este campo no puede estar vacío.")
-                  .MinimumLength(5).WithMessage("Por favor introduzca mínimo 5 caracteres.")
+                  .MinimumLength(3).WithMessage("Por favor introduzca mínimo 3 caracteres.")
                   .MaximumLength(100).WithMessage("No se permiten más de 100 caracteres.");
 
             RuleFor(book => book.Publisher)
@@ -33,7 +33,6 @@ namespace PresentationLayer.Validations
                  .Matches("^[a-zA-Z]+$").WithMessage("Solo se permiten letras.")
                  .MinimumLength(5).WithMessage("Por favor introduzca mínimo 5 letras.")
                  .MaximumLength(100).WithMessage("No se permiten más de 100 letras.");
-
         }
     }
 }

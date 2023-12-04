@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 namespace BusinessLayer.Domain
 {
     public class AuthBussines
-
     {
-
         AuthData authData = new AuthData();
         public bool LoginUser(User user)
         {
             return authData.Login(user);
         }
+
         public string GetPasswordByUserName(User user)
         {
             return authData.GetPasswordByUserName(user);

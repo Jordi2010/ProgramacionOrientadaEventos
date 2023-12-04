@@ -199,6 +199,7 @@
             pdfAuthorButton.TabIndex = 10;
             pdfAuthorButton.Text = "PDF";
             pdfAuthorButton.UseVisualStyleBackColor = false;
+            pdfAuthorButton.Click += pdfAuthorButton_Click;
             // 
             // authorSearchTextBox
             // 

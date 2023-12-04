@@ -12,6 +12,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iText.Kernel.Colors;
+using PresentationLayer.Utilities;
 
 namespace PresentationLayer.Forms
 {
@@ -33,13 +35,7 @@ namespace PresentationLayer.Forms
 
         public void LoadAllData()
         {
-            /*LoadBookData();
-            LoadAutoresData();
-            LoadAutoresComboBoxData();
-            LoadStatusComboBoxData();
-            LoadLoanData();*/
             LoadReturnData();
-            //LoadBookComboBoxData();
             LoadLoanComboBoxData();
             statusLoanCoamboBoxData();
         }
@@ -103,6 +99,8 @@ namespace PresentationLayer.Forms
             returnLoanStatusComboBox.DataSource = loanStatusBusiness.GetAllLoanStatus();
             returnBookComboBox.DisplayMember = "LibroCompleto";
             returnBookComboBox.ValueMember = "idPrestamo";
+            returnLoanStatusComboBox.DisplayMember = "estadoPrestamo";
+            returnLoanStatusComboBox.ValueMember = "idestadoPrestamo";
         }
 
         private void returnBookComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -183,7 +181,6 @@ namespace PresentationLayer.Forms
                     }
                 }
             }
-
             LoadAllData();
         }
 
@@ -211,6 +208,24 @@ namespace PresentationLayer.Forms
         {
             ReturnBusiness returnBusiness = new ReturnBusiness();
             returnDataGridView.DataSource = returnBusiness.SearchReturn(returnSearchTextBox.Text);
+        }
+
+        private void pdfReturnButton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jordi\OneDrive\Documentos\Devoluciones_Reporte.pdf";
+            try
+            {
+                iTextPDF returnPDF = new iTextPDF();
+                var document = returnPDF.IniatializePDF(path);
+                document.Add(returnPDF.GenerateHeaderPDF("REPORTE DE DEVOLUCIONES", 16, ColorConstants.RED));
+                document.Add(returnPDF.GenerateTablePDF(4, returnDataGridView));
+                document.Close();
+                MessageBox.Show("PDF generado correctamente en documentos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

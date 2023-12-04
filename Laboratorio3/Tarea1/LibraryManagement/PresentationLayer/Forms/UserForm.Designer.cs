@@ -75,6 +75,7 @@
             pdfUserButton.TabIndex = 31;
             pdfUserButton.Text = "PDF";
             pdfUserButton.UseVisualStyleBackColor = false;
+            pdfUserButton.Click += pdfUserButton_Click;
             // 
             // deleteUserButton
             // 

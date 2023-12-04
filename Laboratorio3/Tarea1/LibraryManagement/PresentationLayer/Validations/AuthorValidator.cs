@@ -18,13 +18,13 @@ namespace PresentationLayer.Validations
                 .Cascade(CascadeMode.Stop)
                 .NotEmpty()
                 .WithMessage("El nombre no puede estar vacío.")
-                .MinimumLength(5).WithMessage("Por favor introduzca mínimo 5 carácteres.");
+                .MinimumLength(3).WithMessage("Por favor introduzca mínimo 3 carácteres.");
 
             RuleFor(author => author.LastName)
                 .Cascade(CascadeMode.Stop)
                 .NotEmpty()
                 .WithMessage("El apellido no puede estar vacío.")
-                .MinimumLength(5).WithMessage("Por favor introduzca mínimo 5 carácteres.");
+                .MinimumLength(3).WithMessage("Por favor introduzca mínimo 3 carácteres.");
         }
     }
 }

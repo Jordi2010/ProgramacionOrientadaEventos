@@ -1,4 +1,9 @@
-﻿using System;
+﻿using BusinessLayer.Crud;
+using CommonLayer.Entities;
+using FluentValidation.Results;
+using DataLayer.MailServices;
+using PresentationLayer.Validations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +20,16 @@ namespace PresentationLayer.Forms
         public ProfileForm()
         {
             InitializeComponent();
+        }
+
+        private void editProfileButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveProfileButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

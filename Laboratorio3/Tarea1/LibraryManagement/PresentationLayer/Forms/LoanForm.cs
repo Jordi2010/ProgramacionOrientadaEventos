@@ -2,6 +2,8 @@
 using CommonLayer.Entities;
 using DataLayer.MailServices;
 using FluentValidation.Results;
+using iText.Kernel.Colors;
+using PresentationLayer.Utilities;
 using PresentationLayer.Validations;
 using System;
 using System.Collections.Generic;
@@ -57,11 +59,6 @@ namespace PresentationLayer.Forms
                 loanBookComboBox.DataSource = bookDataTable;
                 loanBookComboBox.DisplayMember = "LibroCompleto";
                 loanBookComboBox.ValueMember = "idLibro";
-            }
-            else
-            {
-                // Si no hay libros, muestra un mensaje predeterminado
-                MessageBox.Show("No hay libros disponibles.");
             }
         }
 
@@ -174,6 +171,24 @@ namespace PresentationLayer.Forms
         {
             LoanBusiness loanBusiness = new LoanBusiness();
             loanDataGridView.DataSource = loanBusiness.SearchLoan(loanSearchTextBox.Text);
+        }
+
+        private void pdfLoanButton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jordi\OneDrive\Documentos\Prestamos_Reporte.pdf";
+            try
+            {
+                iTextPDF loanPDF = new iTextPDF();
+                var document = loanPDF.IniatializePDF(path);
+                document.Add(loanPDF.GenerateHeaderPDF("REPORTE DE PRÉSTAMOS", 16, ColorConstants.RED));
+                document.Add(loanPDF.GenerateTablePDF(6, loanDataGridView));
+                document.Close();
+                MessageBox.Show("PDF generado correctamente en documentos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

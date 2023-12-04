@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Crud;
 using DataLayer.Data;
+using iText.Kernel.Colors;
+using PresentationLayer.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,6 +53,24 @@ namespace PresentationLayer.Forms
             else
             {
                 MessageBox.Show("Debe seleccionar una fila antes de eliminar");
+            }
+        }
+
+        private void pdfUserButton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jordi\OneDrive\Documentos\Usuarios_Reporte.pdf";
+            try
+            {
+                iTextPDF userPDF = new iTextPDF();
+                var document = userPDF.IniatializePDF(path);
+                document.Add(userPDF.GenerateHeaderPDF("REPORTE DE USUARIOS", 16, ColorConstants.RED));
+                document.Add(userPDF.GenerateTablePDF(7, userDataGridView));
+                document.Close();
+                MessageBox.Show("PDF generado correctamente en documentos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

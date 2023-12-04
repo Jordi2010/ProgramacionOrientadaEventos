@@ -67,13 +67,13 @@
             saveProfileButton.FlatStyle = FlatStyle.Flat;
             saveProfileButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             saveProfileButton.ForeColor = Color.White;
-            saveProfileButton.Location = new Point(952, 777);
-            saveProfileButton.Margin = new Padding(3, 4, 3, 4);
+            saveProfileButton.Location = new Point(833, 583);
             saveProfileButton.Name = "saveProfileButton";
-            saveProfileButton.Size = new Size(126, 41);
+            saveProfileButton.Size = new Size(110, 31);
             saveProfileButton.TabIndex = 32;
             saveProfileButton.Text = "Guardar";
             saveProfileButton.UseVisualStyleBackColor = false;
+            saveProfileButton.Click += saveProfileButton_Click;
             // 
             // editProfileButton
             // 
@@ -82,21 +82,20 @@
             editProfileButton.FlatStyle = FlatStyle.Flat;
             editProfileButton.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             editProfileButton.ForeColor = Color.White;
-            editProfileButton.Location = new Point(307, 709);
-            editProfileButton.Margin = new Padding(3, 4, 3, 4);
+            editProfileButton.Location = new Point(269, 532);
             editProfileButton.Name = "editProfileButton";
-            editProfileButton.Size = new Size(126, 41);
+            editProfileButton.Size = new Size(110, 31);
             editProfileButton.TabIndex = 33;
             editProfileButton.Text = "Editar";
             editProfileButton.UseVisualStyleBackColor = false;
+            editProfileButton.Click += editProfileButton_Click;
             // 
             // profileEmailTextBox
             // 
             profileEmailTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileEmailTextBox.Location = new Point(14, 508);
-            profileEmailTextBox.Margin = new Padding(3, 4, 3, 4);
+            profileEmailTextBox.Location = new Point(12, 381);
             profileEmailTextBox.Name = "profileEmailTextBox";
-            profileEmailTextBox.Size = new Size(410, 30);
+            profileEmailTextBox.Size = new Size(359, 26);
             profileEmailTextBox.TabIndex = 24;
             // 
             // profileEmailLabel
@@ -104,28 +103,26 @@
             profileEmailLabel.AutoSize = true;
             profileEmailLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileEmailLabel.ForeColor = Color.White;
-            profileEmailLabel.Location = new Point(11, 469);
+            profileEmailLabel.Location = new Point(10, 352);
             profileEmailLabel.Name = "profileEmailLabel";
-            profileEmailLabel.Size = new Size(220, 25);
+            profileEmailLabel.Size = new Size(171, 21);
             profileEmailLabel.TabIndex = 23;
             profileEmailLabel.Text = "Correo electrónico:";
             // 
             // profileLastNameTextBox
             // 
             profileLastNameTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileLastNameTextBox.Location = new Point(14, 304);
-            profileLastNameTextBox.Margin = new Padding(3, 4, 3, 4);
+            profileLastNameTextBox.Location = new Point(12, 228);
             profileLastNameTextBox.Name = "profileLastNameTextBox";
-            profileLastNameTextBox.Size = new Size(410, 30);
+            profileLastNameTextBox.Size = new Size(359, 26);
             profileLastNameTextBox.TabIndex = 20;
             // 
             // profilePhoneTextBox
             // 
             profilePhoneTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profilePhoneTextBox.Location = new Point(14, 405);
-            profilePhoneTextBox.Margin = new Padding(3, 4, 3, 4);
+            profilePhoneTextBox.Location = new Point(12, 304);
             profilePhoneTextBox.Name = "profilePhoneTextBox";
-            profilePhoneTextBox.Size = new Size(410, 30);
+            profilePhoneTextBox.Size = new Size(359, 26);
             profilePhoneTextBox.TabIndex = 22;
             // 
             // profilePhoneLabel
@@ -133,9 +130,9 @@
             profilePhoneLabel.AutoSize = true;
             profilePhoneLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profilePhoneLabel.ForeColor = Color.White;
-            profilePhoneLabel.Location = new Point(11, 367);
+            profilePhoneLabel.Location = new Point(10, 275);
             profilePhoneLabel.Name = "profilePhoneLabel";
-            profilePhoneLabel.Size = new Size(111, 25);
+            profilePhoneLabel.Size = new Size(85, 21);
             profilePhoneLabel.TabIndex = 21;
             profilePhoneLabel.Text = "Teléfono:";
             // 
@@ -144,9 +141,9 @@
             profileLastNameLabel.AutoSize = true;
             profileLastNameLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileLastNameLabel.ForeColor = Color.White;
-            profileLastNameLabel.Location = new Point(802, 333);
+            profileLastNameLabel.Location = new Point(702, 250);
             profileLastNameLabel.Name = "profileLastNameLabel";
-            profileLastNameLabel.Size = new Size(109, 25);
+            profileLastNameLabel.Size = new Size(83, 21);
             profileLastNameLabel.TabIndex = 31;
             profileLastNameLabel.Text = "Apellido:";
             // 
@@ -155,19 +152,18 @@
             profileNameLabel.AutoSize = true;
             profileNameLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileNameLabel.ForeColor = Color.White;
-            profileNameLabel.Location = new Point(11, 159);
+            profileNameLabel.Location = new Point(10, 119);
             profileNameLabel.Name = "profileNameLabel";
-            profileNameLabel.Size = new Size(106, 25);
+            profileNameLabel.Size = new Size(82, 21);
             profileNameLabel.TabIndex = 25;
             profileNameLabel.Text = "Nombre:";
             // 
             // profileUserTextBox
             // 
             profileUserTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileUserTextBox.Location = new Point(14, 96);
-            profileUserTextBox.Margin = new Padding(3, 4, 3, 4);
+            profileUserTextBox.Location = new Point(12, 72);
             profileUserTextBox.Name = "profileUserTextBox";
-            profileUserTextBox.Size = new Size(410, 30);
+            profileUserTextBox.Size = new Size(359, 26);
             profileUserTextBox.TabIndex = 18;
             // 
             // profileUserLabel
@@ -175,9 +171,9 @@
             profileUserLabel.AutoSize = true;
             profileUserLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileUserLabel.ForeColor = Color.White;
-            profileUserLabel.Location = new Point(802, 125);
+            profileUserLabel.Location = new Point(702, 94);
             profileUserLabel.Name = "profileUserLabel";
-            profileUserLabel.Size = new Size(95, 25);
+            profileUserLabel.Size = new Size(75, 21);
             profileUserLabel.TabIndex = 30;
             profileUserLabel.Text = "Usuario:";
             // 
@@ -197,20 +193,18 @@
             profileInformationGroupBox.Controls.Add(editProfileButton);
             profileInformationGroupBox.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileInformationGroupBox.ForeColor = Color.White;
-            profileInformationGroupBox.Location = new Point(8, 68);
-            profileInformationGroupBox.Margin = new Padding(3, 4, 3, 4);
+            profileInformationGroupBox.Location = new Point(7, 51);
             profileInformationGroupBox.Name = "profileInformationGroupBox";
-            profileInformationGroupBox.Padding = new Padding(3, 4, 3, 4);
-            profileInformationGroupBox.Size = new Size(776, 820);
+            profileInformationGroupBox.Size = new Size(679, 615);
             profileInformationGroupBox.TabIndex = 34;
             profileInformationGroupBox.TabStop = false;
             profileInformationGroupBox.Text = "Información de perfil actual";
             // 
             // profileEmailViewLabel
             // 
-            profileEmailViewLabel.Location = new Point(277, 509);
+            profileEmailViewLabel.Location = new Point(242, 382);
             profileEmailViewLabel.Name = "profileEmailViewLabel";
-            profileEmailViewLabel.Size = new Size(477, 28);
+            profileEmailViewLabel.Size = new Size(417, 21);
             profileEmailViewLabel.TabIndex = 44;
             profileEmailViewLabel.Text = "Correo electrónico";
             // 
@@ -218,17 +212,17 @@
             // 
             profileEmailTitleLabel.AutoSize = true;
             profileEmailTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileEmailTitleLabel.Location = new Point(277, 469);
+            profileEmailTitleLabel.Location = new Point(242, 352);
             profileEmailTitleLabel.Name = "profileEmailTitleLabel";
-            profileEmailTitleLabel.Size = new Size(218, 26);
+            profileEmailTitleLabel.Size = new Size(168, 19);
             profileEmailTitleLabel.TabIndex = 43;
             profileEmailTitleLabel.Text = "Correo electrónico:";
             // 
             // profilePhoneViewLabel
             // 
-            profilePhoneViewLabel.Location = new Point(277, 407);
+            profilePhoneViewLabel.Location = new Point(242, 305);
             profilePhoneViewLabel.Name = "profilePhoneViewLabel";
-            profilePhoneViewLabel.Size = new Size(477, 28);
+            profilePhoneViewLabel.Size = new Size(417, 21);
             profilePhoneViewLabel.TabIndex = 42;
             profilePhoneViewLabel.Text = "Teléfono";
             // 
@@ -236,17 +230,17 @@
             // 
             profilePhoneTitleLabel.AutoSize = true;
             profilePhoneTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profilePhoneTitleLabel.Location = new Point(277, 367);
+            profilePhoneTitleLabel.Location = new Point(242, 275);
             profilePhoneTitleLabel.Name = "profilePhoneTitleLabel";
-            profilePhoneTitleLabel.Size = new Size(107, 26);
+            profilePhoneTitleLabel.Size = new Size(84, 19);
             profilePhoneTitleLabel.TabIndex = 41;
             profilePhoneTitleLabel.Text = "Teléfono:";
             // 
             // profileLastNameViewLabel
             // 
-            profileLastNameViewLabel.Location = new Point(277, 305);
+            profileLastNameViewLabel.Location = new Point(242, 229);
             profileLastNameViewLabel.Name = "profileLastNameViewLabel";
-            profileLastNameViewLabel.Size = new Size(477, 28);
+            profileLastNameViewLabel.Size = new Size(417, 21);
             profileLastNameViewLabel.TabIndex = 40;
             profileLastNameViewLabel.Text = "Apellido";
             // 
@@ -254,17 +248,17 @@
             // 
             profileLastNameTitleLabel.AutoSize = true;
             profileLastNameTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileLastNameTitleLabel.Location = new Point(277, 265);
+            profileLastNameTitleLabel.Location = new Point(242, 199);
             profileLastNameTitleLabel.Name = "profileLastNameTitleLabel";
-            profileLastNameTitleLabel.Size = new Size(107, 26);
+            profileLastNameTitleLabel.Size = new Size(83, 19);
             profileLastNameTitleLabel.TabIndex = 39;
             profileLastNameTitleLabel.Text = "Apellido:";
             // 
             // profileNameViewLabel
             // 
-            profileNameViewLabel.Location = new Point(277, 199);
+            profileNameViewLabel.Location = new Point(242, 149);
             profileNameViewLabel.Name = "profileNameViewLabel";
-            profileNameViewLabel.Size = new Size(477, 28);
+            profileNameViewLabel.Size = new Size(417, 21);
             profileNameViewLabel.TabIndex = 38;
             profileNameViewLabel.Text = "Nombre";
             // 
@@ -272,17 +266,17 @@
             // 
             profileNameTitleLabel.AutoSize = true;
             profileNameTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileNameTitleLabel.Location = new Point(277, 159);
+            profileNameTitleLabel.Location = new Point(242, 119);
             profileNameTitleLabel.Name = "profileNameTitleLabel";
-            profileNameTitleLabel.Size = new Size(105, 26);
+            profileNameTitleLabel.Size = new Size(81, 19);
             profileNameTitleLabel.TabIndex = 37;
             profileNameTitleLabel.Text = "Nombre:";
             // 
             // profileUserViewLabel
             // 
-            profileUserViewLabel.Location = new Point(277, 97);
+            profileUserViewLabel.Location = new Point(242, 73);
             profileUserViewLabel.Name = "profileUserViewLabel";
-            profileUserViewLabel.Size = new Size(477, 28);
+            profileUserViewLabel.Size = new Size(417, 21);
             profileUserViewLabel.TabIndex = 36;
             profileUserViewLabel.Text = "Usuario";
             // 
@@ -290,19 +284,18 @@
             // 
             profileUserTitleLabel.AutoSize = true;
             profileUserTitleLabel.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            profileUserTitleLabel.Location = new Point(277, 57);
+            profileUserTitleLabel.Location = new Point(242, 43);
             profileUserTitleLabel.Name = "profileUserTitleLabel";
-            profileUserTitleLabel.Size = new Size(96, 26);
+            profileUserTitleLabel.Size = new Size(73, 19);
             profileUserTitleLabel.TabIndex = 35;
             profileUserTitleLabel.Text = "Usuario:";
             // 
             // profilePictureBox
             // 
             profilePictureBox.Image = (Image)resources.GetObject("profilePictureBox.Image");
-            profilePictureBox.Location = new Point(33, 55);
-            profilePictureBox.Margin = new Padding(3, 4, 3, 4);
+            profilePictureBox.Location = new Point(29, 41);
             profilePictureBox.Name = "profilePictureBox";
-            profilePictureBox.Size = new Size(221, 593);
+            profilePictureBox.Size = new Size(193, 445);
             profilePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             profilePictureBox.TabIndex = 34;
             profilePictureBox.TabStop = false;
@@ -319,11 +312,9 @@
             profileEditGroupBox.Controls.Add(profilePhoneLabel);
             profileEditGroupBox.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             profileEditGroupBox.ForeColor = Color.White;
-            profileEditGroupBox.Location = new Point(791, 68);
-            profileEditGroupBox.Margin = new Padding(3, 4, 3, 4);
+            profileEditGroupBox.Location = new Point(692, 51);
             profileEditGroupBox.Name = "profileEditGroupBox";
-            profileEditGroupBox.Padding = new Padding(3, 4, 3, 4);
-            profileEditGroupBox.Size = new Size(440, 820);
+            profileEditGroupBox.Size = new Size(385, 615);
             profileEditGroupBox.TabIndex = 35;
             profileEditGroupBox.TabStop = false;
             profileEditGroupBox.Text = "Editar mis datos";
@@ -331,10 +322,9 @@
             // profileNameTextBox
             // 
             profileNameTextBox.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profileNameTextBox.Location = new Point(11, 197);
-            profileNameTextBox.Margin = new Padding(3, 4, 3, 4);
+            profileNameTextBox.Location = new Point(10, 148);
             profileNameTextBox.Name = "profileNameTextBox";
-            profileNameTextBox.Size = new Size(410, 30);
+            profileNameTextBox.Size = new Size(359, 26);
             profileNameTextBox.TabIndex = 29;
             // 
             // profileManagementLabel
@@ -342,18 +332,18 @@
             profileManagementLabel.AutoSize = true;
             profileManagementLabel.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             profileManagementLabel.ForeColor = Color.White;
-            profileManagementLabel.Location = new Point(439, 15);
+            profileManagementLabel.Location = new Point(384, 11);
             profileManagementLabel.Name = "profileManagementLabel";
-            profileManagementLabel.Size = new Size(385, 32);
+            profileManagementLabel.Size = new Size(301, 25);
             profileManagementLabel.TabIndex = 29;
             profileManagementLabel.Text = "ADMINISTRACIÓN DEL PERFIL";
             // 
             // ProfileForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 61, 98);
-            ClientSize = new Size(1239, 901);
+            ClientSize = new Size(1084, 591);
             Controls.Add(saveProfileButton);
             Controls.Add(profileLastNameLabel);
             Controls.Add(profileUserLabel);
@@ -361,7 +351,6 @@
             Controls.Add(profileEditGroupBox);
             Controls.Add(profileManagementLabel);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "ProfileForm";
             Text = "ProfileForm";
             profileInformationGroupBox.ResumeLayout(false);

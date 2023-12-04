@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alessandro\\.nuget\\packages\\": {}
+    "C:\\Users\\jordi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+      "projectUniqueName": "C:\\Users\\jordi\\Source\\Repos\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
       "projectName": "CommonLayer",
-      "projectPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
-      "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
-      "outputPath": "D:\\Ciclo_II_2023\\Biblioteca segunda\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
+      "projectPath": "C:\\Users\\jordi\\Source\\Repos\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\CommonLayer.csproj",
+      "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jordi\\Source\\Repos\\ProgramacionOrientadaEventos\\Laboratorio3\\Tarea1\\LibraryManagement\\CommonLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
